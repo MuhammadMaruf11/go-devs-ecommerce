@@ -1,0 +1,39 @@
+/* baner css start  */
+
+.banner-container {
+  background: #ebebeb;
+  padding: 100px 0;
+  border-radius: 25px;
+}
+
+.banner-title {
+  margin-bottom: 15px;
+}
+
+.banner-title h2 {
+  font-size: 50px;
+}
+
+.banner-description {
+  margin-bottom: 24px;
+}
+
+/* baner css end */
+
+/* casual shop css start  */
+
+.casual-shop-area {
+  padding: 80px 0;
+}
+
+.casual-shop-wrap {
+  background: #ebebeb;
+  padding: 0 30px;
+  border-radius: 15px;
+}
+
+.casual-shop-text {
+  margin-bottom: 25px;
+}
+
+/* casual products css end */
