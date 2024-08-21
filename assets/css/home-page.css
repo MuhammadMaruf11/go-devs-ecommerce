@@ -37,3 +37,107 @@
 }
 
 /* casual products css end */
+
+/* all products css start  */
+
+.all-products-area .nav-tabs {
+  justify-content: end;
+  border: 0;
+}
+
+.all-products-area .nav-link {
+  border: 0;
+  outline: 0;
+  background: #f9f9f9;
+  color: #232323;
+  position: relative;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+  font-family: "Mukta", sans-serif;
+}
+
+.all-products-area .nav-link.active {
+  color: #0088cc;
+  background-color: transparent;
+  border-color: #0088cc;
+}
+
+.product-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.product-image a {
+  display: inline-block;
+}
+
+.product-action-btn {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.product-action-btn button {
+  border: 0;
+  outline: 0;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  margin: 0 3px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.product-action-btn button:hover {
+  background-color: #0088cc;
+  color: #fff;
+}
+
+.product-image:hover .product-action-btn {
+  visibility: visible;
+  opacity: 1;
+  bottom: 20%;
+}
+
+.product-content {
+  padding: 15px 10px 0;
+}
+
+.product-content .product-title {
+  margin-bottom: 10px;
+}
+
+.product-content .product-title h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.product-content .product-price {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.product-content .product-price .old-price {
+  text-decoration: line-through;
+}
+
+.product-content .product-price .new-price {
+  color: #08c;
+  font-weight: 700;
+}
+
+/* all products css end */
