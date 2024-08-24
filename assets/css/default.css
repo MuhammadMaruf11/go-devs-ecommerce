@@ -32,6 +32,10 @@ img {
   transition: all 0.3s linear 0s;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
 /* Shadow and Outline */
 a {
   text-decoration: none;
@@ -89,6 +93,10 @@ button:disabled {
   box-shadow: none;
 }
 
+.section-title {
+  margin-bottom: 50px;
+}
+
 /* Heading */
 h1,
 h2,
@@ -137,7 +145,7 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
