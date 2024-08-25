@@ -314,6 +314,15 @@ label {
   overflow: hidden;
 }
 
+.old-price {
+  text-decoration: line-through;
+}
+
+.new-price {
+  color: #08c;
+  font-weight: 700;
+}
+
 /* header fixed css  */
 
 .sticky-header {

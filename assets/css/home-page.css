@@ -127,15 +127,6 @@
   column-gap: 12px;
 }
 
-.product-content .product-price .old-price {
-  text-decoration: line-through;
-}
-
-.product-content .product-price .new-price {
-  color: #08c;
-  font-weight: 700;
-}
-
 /* all products css end */
 
 /* offer products css start  */
