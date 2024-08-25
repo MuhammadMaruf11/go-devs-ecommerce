@@ -335,6 +335,18 @@ label {
   transition: 0.3s;
 }
 
+/* custom bootstrap modal css start  */
+
+.modal-dialog.modal-lg {
+  max-width: 1000px;
+}
+
+.modal-dialog.modal-xl {
+  max-width: 1600px;
+}
+
+/* custom bootstrap modal css end */
+
 /* custom button bootstrap class overwrite start */
 
 .btn {
@@ -369,10 +381,6 @@ label {
 }
 .btn_info {
   --hue: 210;
-}
-
-.btn + .btn {
-  margin-top: 2.5em;
 }
 
 .btn__txt {
