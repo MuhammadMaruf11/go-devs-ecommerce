@@ -10,6 +10,16 @@
   padding: 15px 0;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  transition: 0.3s;
+}
+
 .header-contact ul,
 .header-social ul {
   list-style: none;
@@ -47,6 +57,9 @@
   font-size: 28px;
 }
 
+.main-menu {
+  position: relative;
+}
 .main-menu > ul {
   list-style: none;
   text-align: center;
@@ -54,7 +67,6 @@
 
 .main-menu > ul > li {
   display: inline-block;
-  position: relative;
   margin: 0 15px;
 }
 
@@ -104,7 +116,6 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   transition: opacity 0.3s linear, visibility 0.3s linear;
   z-index: 5;
-  min-width: max-content;
 }
 
 .sub-menu.tiny-menu {
@@ -120,11 +131,24 @@
 }
 
 .sub-menu.large-menu {
-  width: 960px;
+  width: 856px;
+}
+
+.category-menu {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.category-menu .sub-menu-img {
+  margin-top: 20px;
+  width: 182px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .sub-menu-title {
   border-bottom: 1px solid #ddd;
+  display: inline-block;
 }
 
 .sub-menu-list ul {
