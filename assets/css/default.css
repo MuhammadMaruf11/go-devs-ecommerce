@@ -39,6 +39,7 @@ section {
 /* Shadow and Outline */
 a {
   text-decoration: none;
+  color: inherit;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;

@@ -3,22 +3,45 @@ const toggleBtn = document.querySelector('.toggle-icon');
 toggleBtn.addEventListener('click', (e) => {
     e.preventDefault();
     document.querySelector('.mobile-menu').classList.toggle('open')
+    toggleBtn.classList.toggle('open')
 })
 
+const closeBtn = document.querySelector('.close-btn');
 
-const menuItems = document.querySelectorAll('.mobile-menu > ul > li');
+closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.querySelector('.mobile-menu').classList.remove('open')
+    toggleBtn.classList.remove('open')
+})
 
-menuItems.forEach(item => {
-    item.addEventListener('click', function () {
-        // Check if the clicked item is already open
-        const isOpen = item.classList.contains('open');
+document.querySelectorAll('.mobile-main-menu > li > a').forEach(mainMenuItem => {
+    mainMenuItem.addEventListener('click', function (e) {
+        e.preventDefault();  // Prevent the default link behavior
 
-        // Remove 'open' class from all <li> elements
-        menuItems.forEach(el => el.classList.remove('open'));
+        // Toggle the open class on the clicked item
+        const parentLi = mainMenuItem.parentElement;
+        const isOpen = parentLi.classList.contains('open');
+        document.querySelectorAll('.mobile-main-menu > li').forEach(li => li.classList.remove('open'));
 
-        // If the clicked item was not already open, add the 'open' class
         if (!isOpen) {
-            item.classList.add('open');
+            parentLi.classList.add('open');
+        }
+    });
+});
+
+
+// Handle the click event on mobile sub-menu items
+document.querySelectorAll('.mobile-sub-menu > li > a').forEach(subMenuItem => {
+    subMenuItem.addEventListener('click', function (e) {
+        e.preventDefault();  // Prevent the default link behavior
+
+        // Toggle the open class on the clicked item
+        const parentLi = subMenuItem.parentElement;
+        const isOpen = parentLi.classList.contains('open');
+        document.querySelectorAll('.mobile-sub-menu > li').forEach(li => li.classList.remove('open'));
+
+        if (!isOpen) {
+            parentLi.classList.add('open');
         }
     });
 });
