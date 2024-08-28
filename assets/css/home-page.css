@@ -77,9 +77,10 @@
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s linear;
-  display: inline-block;
+  display: inline-flex;
   width: 100%;
   text-align: center;
+  justify-content: center;
 }
 
 .product-action-btn button {

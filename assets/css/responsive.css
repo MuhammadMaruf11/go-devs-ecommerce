@@ -165,15 +165,15 @@
   }
 
   .mobile-main-menu > li.open > a {
-    background-color: #ff5900;
+    background-color: var(--primary-color);
     color: #ffffff;
-    border-bottom-color: #ff5900;
+    border-bottom-color: var(--primary-color);
   }
 
   .mobile-sub-menu > li.open > a {
-    background-color: #ffb200;
+    background-color: var(--secondary-color);
     color: #000;
-    border-bottom-color: #ffb200;
+    border-bottom-color: var(--secondary-color);
   }
 
   .mobile-main-menu > li.open > a > i {
@@ -222,7 +222,7 @@
   }
 
   .mobile-sub-menu > ul > li {
-    border-bottom: 1px solid #ff5900;
+    border-bottom: 1px solid var(--primary-color);
   }
   .mobile-sub-menu > ul {
     background: #6fac2f;
@@ -246,11 +246,60 @@
   .banner-wrap {
     text-align: center;
   }
+
+  .casual-shop-wrap {
+    padding: 0 12px;
+  }
+
+  .casual-shop-text {
+    margin-bottom: 20px;
+  }
+
+  .casual-shop-text h3 {
+    font-size: 18px;
+  }
+
+  .casual-shop-btn a {
+    padding: 12px 24px;
+    min-height: max-content;
+  }
+  .offer-product-area {
+    padding: 70px 0;
+  }
+
+  .marquee-area ul li {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .blog-wrap {
+    margin-bottom: 24px;
+  }
+  .info-wrap {
+    margin-bottom: 24px;
+  }
+
+  .footer-title h4 {
+    font-size: 20px;
+  }
+
+  .footer-widget .footer-description p {
+    font-size: 14px;
+  }
 }
 
 /* Mobile layout max 425 */
 
 @media (max-width: 767px) {
+  .btn {
+    padding: 12px 20px;
+    min-height: max-content;
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
   .header-logo a {
     display: inline-block;
     width: 130px;
@@ -357,15 +406,15 @@
   }
 
   .mobile-main-menu > li.open > a {
-    background-color: #ff5900;
+    background-color: var(--primary-color);
     color: #ffffff;
-    border-bottom-color: #ff5900;
+    border-bottom-color: var(--primary-color);
   }
 
   .mobile-sub-menu > li.open > a {
-    background-color: #ffb200;
+    background-color: var(--secondary-color);
     color: #000;
-    border-bottom-color: #ffb200;
+    border-bottom-color: var(--secondary-color);
   }
 
   .mobile-main-menu > li.open > a > i {
@@ -414,7 +463,7 @@
   }
 
   .mobile-sub-menu > ul > li {
-    border-bottom: 1px solid #ff5900;
+    border-bottom: 1px solid var(--primary-color);
   }
   .mobile-sub-menu > ul {
     background: #6fac2f;
@@ -437,5 +486,135 @@
 
   .banner-wrap {
     text-align: center;
+  }
+
+  .casual-shop-wrap {
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+
+  .casual-shop-text {
+    margin-bottom: 20px;
+  }
+
+  .casual-shop-text h3 {
+    font-size: 18px;
+  }
+
+  .casual-shop-btn a {
+    padding: 12px 24px;
+    min-height: max-content;
+  }
+
+  .product-wrap {
+    margin-bottom: 24px;
+  }
+
+  .product-content .product-title h4 {
+    font-size: 14px;
+  }
+
+  .offer-product-area {
+    padding: 70px 0;
+  }
+
+  .offer-product-title h2 {
+    font-size: 24px;
+  }
+  .offer-product-description p {
+    font-size: 14px;
+  }
+
+  #compareModal .modal-body {
+    overflow-x: auto;
+  }
+
+  .product-cart-btn .btn {
+    padding: 8px 12px;
+    min-height: max-content;
+  }
+
+  .product-countdown {
+    max-width: 120px;
+    height: 40px;
+  }
+
+  .product-decrease,
+  .product-increase {
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 5px;
+  }
+
+  .marquee-area ul li {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .blog-wrap {
+    margin-bottom: 24px;
+  }
+
+  .blog-time {
+    font-size: 12px;
+  }
+  .blog-title {
+    margin-bottom: 12px;
+  }
+
+  .blog-title h6 {
+    font-size: 16px;
+  }
+
+  .blog-btn .btn {
+    padding: 8px 12px;
+  }
+
+  .info-wrap {
+    margin-bottom: 24px;
+  }
+
+  .footer-title h4 {
+    font-size: 20px;
+  }
+
+  .footer-widget {
+    margin-bottom: 0;
+  }
+
+  .footer-widget .footer-description p {
+    font-size: 14px;
+  }
+
+  .footer-widget ul {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear, visibility 0.3s linear;
+  }
+
+  .footer-widget.active ul {
+    visibility: visible;
+    opacity: 1;
+    height: 500px;
+    max-height: max-content;
+  }
+
+  .footer-widget > h4 {
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+
+  .footer-widget > h4 i {
+    display: block;
+    transition: all 0.3s linear;
+  }
+
+  .footer-widget.active > h4 {
+    margin-bottom: 24px;
+  }
+  .footer-widget.active > h4 i {
+    transform: rotate(180deg);
   }
 }

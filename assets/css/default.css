@@ -1,3 +1,24 @@
+:root {
+  --primary-color: #ff5900;
+  --secondary-color: #ffb200;
+  --text-color: #565656;
+  --background-color: #f9f9f9;
+  --heading-color: #111;
+  --old-price-color: #565656;
+  --new-price-color: #08c;
+  --modal-lg-width: 1000px;
+  --modal-xl-width: 1600px;
+  --h1-font-size: 48px;
+  --h2-font-size: 36px;
+  --h3-font-size: 30px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+  --heading-line-height: 1.3;
+  --section-margin-bottom: 80px;
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +26,21 @@
 }
 
 body {
-  color: #565656;
-  background: #f9f9f9;
+  color: var(--text-color);
+  background: var(--background-color);
   font-size: 16px;
   font-family: "Poppins", system-ui;
   font-weight: 400;
+}
+
+p {
+  margin: 0;
+  hyphens: auto;
+}
+
+hr {
+  margin: 20px 0;
+  border-color: #352323;
 }
 
 /* Base styles for the transition */
@@ -33,7 +64,7 @@ img {
 }
 
 section {
-  margin-bottom: 80px;
+  margin-bottom: var(--section-margin-bottom);
 }
 
 /* Shadow and Outline */
@@ -98,7 +129,7 @@ button:disabled {
   margin-bottom: 50px;
 }
 
-/* Heading */
+/* Headings */
 h1,
 h2,
 h3,
@@ -106,43 +137,34 @@ h4,
 h5,
 h6 {
   font-family: "Mukta", sans-serif;
-  color: #111;
+  color: var(--heading-color);
   font-weight: 700;
   margin-bottom: 0;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
+  line-height: var(--heading-line-height);
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 1.3;
+  font-size: var(--h1-font-size);
 }
 
 h2 {
-  font-size: 36px;
-  line-height: 1.3;
+  font-size: var(--h2-font-size);
 }
 
 h3 {
-  font-size: 30px;
-  line-height: 1.3;
+  font-size: var(--h3-font-size);
 }
 
 h4 {
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: var(--h4-font-size);
 }
 
 h5 {
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
 }
 
 h6 {
@@ -289,7 +311,7 @@ label {
   color: #10c9c3;
 }
 
-/* Others Common Css Here :) */
+/* Others Common Css Here */
 
 .table-row {
   display: table;
@@ -316,25 +338,23 @@ label {
 }
 
 .old-price {
+  color: var(--old-price-color);
   text-decoration: line-through;
 }
 
 .new-price {
-  color: #08c;
+  color: var(--new-price-color);
   font-weight: 700;
 }
 
-/* custom bootstrap modal css start  */
-
+/* Modal Customization */
 .modal-dialog.modal-lg {
-  max-width: 1000px;
+  max-width: var(--modal-lg-width);
 }
 
 .modal-dialog.modal-xl {
-  max-width: 1600px;
+  max-width: var(--modal-xl-width);
 }
-
-/* custom bootstrap modal css end */
 
 /* custom button bootstrap class overwrite start */
 

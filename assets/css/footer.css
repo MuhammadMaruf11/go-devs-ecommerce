@@ -17,16 +17,19 @@
 }
 
 .footer-widget {
-  margin-bottom: 16px;
+  margin-bottom: 60px;
 }
 
-.footer-widget h4 {
+.footer-widget > h4 {
   font-size: 20px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-widget p {
-  font-size: 16px;
+.footer-widget > h4 i {
+  display: none;
 }
 
 .footer-widget ul {
@@ -63,6 +66,7 @@
 
 .footer-social ul li {
   margin: 0 15px 0 0;
+  display: inline-block;
 }
 
 .footer-social ul li a {
