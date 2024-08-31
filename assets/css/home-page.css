@@ -1,8 +1,9 @@
 /* baner css start  */
 
 .banner-container {
-  background: #ebebeb;
-  padding: 100px 0;
+  background: var(--background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
   border-radius: 25px;
 }
 
@@ -23,7 +24,7 @@
 /* casual shop css start  */
 
 .casual-shop-wrap {
-  background: #ebebeb;
+  background: var(--background-color);
   padding: 0 30px;
   border-radius: 15px;
 }
@@ -44,7 +45,7 @@
 .all-products-area .nav-link {
   border: 0;
   outline: 0;
-  background: #f9f9f9;
+  background: var(--background-color);
   color: #232323;
   position: relative;
   border-bottom: 2px solid transparent;
@@ -320,7 +321,7 @@
 /* offer products css start  */
 
 .offer-product-area {
-  background: #ebebeb;
+  background: var(--background-color);
 }
 
 .offer-product-wrap {

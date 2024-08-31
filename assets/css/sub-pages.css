@@ -1,0 +1,156 @@
+/* all collection css start  */
+
+.filter-wrap {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  margin-bottom: 40px;
+}
+
+.filter-group select {
+  cursor: pointer;
+}
+
+.rating-filter {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  column-gap: 12px;
+}
+
+.filter-group > label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rating-filter input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.rating-filter label {
+  margin: 0;
+}
+
+/* Container for the range slider */
+#range-slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* The track container */
+#range-slider-track {
+  position: relative;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* The range inputs */
+#range-slider input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  background: transparent;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Thumb (slider handle) */
+#range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  z-index: 2;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#range-slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  z-index: 2;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Range track active part */
+#range-slider-track::before,
+#range-slider-track::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+#range-slider-track::before {
+  background-color: #ddd;
+  width: 0;
+  left: 0;
+}
+
+#range-slider-track::after {
+  background-color: #ddd;
+  width: 0;
+  right: 0;
+}
+
+/* Value labels */
+#min-value,
+#max-value {
+  font-size: 14px;
+  color: #333;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.range-values {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filter-actions .btn {
+  width: 48%;
+}
+
+/* all collection css end */
