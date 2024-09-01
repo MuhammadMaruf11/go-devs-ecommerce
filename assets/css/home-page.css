@@ -59,6 +59,10 @@
   border-color: #0088cc;
 }
 
+.product-wrap {
+  margin-bottom: 40px;
+}
+
 .product-image {
   position: relative;
   border-radius: 15px;
@@ -143,17 +147,17 @@
   overflow: hidden;
 }
 
-.modal-body .product-name {
+.product-details-wrap .product-name {
   margin-bottom: 10px;
 }
 
-.modal-body .product-price {
+.product-details-wrap .product-price {
   margin-bottom: 10px;
   font-size: 25px;
 }
 
 .product-description {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .product-cart-wrap {
@@ -436,6 +440,12 @@
 /* blog css end */
 
 /* info css start  */
+
+.info-area {
+  background: var(--background-color);
+  padding: 40px 0;
+  margin-bottom: 0;
+}
 
 .info-wrap {
   display: flex;

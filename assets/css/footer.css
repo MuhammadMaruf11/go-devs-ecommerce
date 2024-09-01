@@ -1,6 +1,7 @@
 /* destop footer css start  */
 .footer-area {
-  background: var(--background-color);
+  /* background: var(--background-color); */
+  background: #fff;
   padding: 70px 0 30px;
 }
 

@@ -1010,429 +1010,101 @@
 
         <!-- banner area end -->
 
-        <!--  all collection area start  -->
+        <!--  product details area start  -->
 
-        <section class="all-collection-area">
-          <div class="container">
+        <section class="product-details-area">
+          <div class="container bg-white py-3">
             <div class="row">
-              <div class="col-lg-3">
-                <form class="filter-wrap mb-lg-0">
-                  <!-- Filter by Sort -->
-                  <div class="filter-group">
-                    <label for="sort-filter">Sort By:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-low-high"
-                        value="5"
-                      />
-                      <label for="p-low-high"> Price: Low to High </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-hight-low"
-                        value="5"
-                      />
-                      <label for="p-hight-low"> Price: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-high-low"
-                        value="5"
-                      />
-                      <label for="r-high-low"> Rating: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-low-high"
-                        value="5"
-                      />
-                      <label for="r-low-high"> Rating: Low to High </label>
-                    </div>
+              <div class="col-xl-5">
+                <div class="product-img-wrap">
+                  <div class="product-img">
+                    <img
+                      src="./assets/img/products/men-product-1.webp"
+                      alt="product"
+                    />
                   </div>
-
-                  <!-- Filter by Categories -->
-                  <div class="filter-group">
-                    <label for="category-filter">Categories:</label>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="all" value="5" />
-                      <label for="all"> All Categories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="men" value="5" />
-                      <label for="men"> Men Fasion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="women" value="5" />
-                      <label for="women"> Women Fashion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="accessories"
-                        value="5"
-                      />
-                      <label for="accessories"> Accessories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="footwear"
-                        value="5"
-                      />
-                      <label for="footwear"> Footwear </label>
-                    </div>
-                  </div>
-
-                  <!-- Filter by Rating -->
-                  <div class="filter-group">
-                    <label>Rating:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-5"
-                        value="5"
-                      />
-                      <label for="rating-5">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-4"
-                        value="4"
-                      />
-                      <label for="rating-4">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-3"
-                        value="3"
-                      />
-                      <label for="rating-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-2"
-                        value="2"
-                      />
-                      <label for="rating-2">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-1"
-                        value="1"
-                      />
-                      <label for="rating-1"> <i class="fa fa-star"></i></label>
-                    </div>
-                  </div>
-
-                  <!-- Filter by Price Range -->
-                  <div class="filter-group range-slider-wrap">
-                    <label for="range-slider">Price Range:</label>
-                    <div id="range-slider">
-                      <div id="range-slider-track" class="range-slider">
-                        <input
-                          type="range"
-                          id="min-range"
-                          min="0"
-                          max="10000"
-                          value="10"
-                        />
-                        <input
-                          type="range"
-                          id="max-range"
-                          min="0"
-                          max="10000"
-                          value="10000"
-                        />
-                      </div>
-                      <div class="range-values">
-                        <p>Min: <span id="min-value">10</span></p>
-                        <p>Max: <span id="max-value">90</span></p>
-                      </div>
-                    </div>
-                    <!-- Submit and Reset Buttons -->
-                    <div class="filter-items">
-                      <button
-                        type="submit"
-                        id="filter-submit"
-                        class="btn btn_success"
-                      >
-                        <span class="btn__txt">Submit</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                      <button
-                        type="reset"
-                        id="filter-reset"
-                        class="btn btn_info"
-                      >
-                        <span class="btn__txt">Reset</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
+                </div>
               </div>
-
-              <div class="col-lg-9">
-                <div class="all-collection-products">
-                  <div class="row">
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
+              <div class="col-xl-7">
+                <div class="product-details-wrap">
+                  <div class="product-name">
+                    <h4>W. Men Formal T-shirt</h4>
+                  </div>
+                  <div class="product-price">
+                    <span class="old-price">Tk 2600.00</span>
+                    <span class="new-price">Tk 2200.00</span>
+                  </div>
+                  <div class="product-description">
+                    <p>
+                      Integer ante arcu, accumsan a, consectetuer eget, posuere
+                      ut, mauris. Praesent adipiscing. Phasellus ullamcorper
+                      ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat
+                      pretium libero. Cras id dui. Aenean ut eros et nisl
+                      sagittis vestibulum....
+                    </p>
+                  </div>
+                  <div class="product-size mb-4">
+                    <select
+                      class="form-select form-select mb-3"
+                      aria-label=".form-select example"
+                    >
+                      <option selected="">Product Size...</option>
+                      <option value="1">Small</option>
+                      <option value="2">Medium</option>
+                      <option value="3">Large</option>
+                      <option value="4">Extra Large</option>
+                    </select>
+                  </div>
+                  <div class="product-color mb-4">
+                    <select
+                      class="form-select form-select mb-3"
+                      aria-label=".form-select example"
+                    >
+                      <option selected="">Product Color...</option>
+                      <option value="1">Red</option>
+                      <option value="2">Green</option>
+                      <option value="3">Blue</option>
+                      <option value="4">Yellow Large</option>
+                    </select>
+                  </div>
+                  <div class="product-cart-wrap">
+                    <div class="product-countdown">
+                      <button class="product-decrease">
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                      <input
+                        type="number"
+                        min="1"
+                        value="1"
+                        placeholder="1"
+                        class="product-countdown-input"
+                      />
+                      <button class="product-increase">
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
                     </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="product-cart-btn mx-auto">
+                      <a
+                        href=""
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#cartProdcut"
+                        aria-controls="cartProdcut"
+                        class="btn btn_primary me-3"
+                      >
+                        <span class="btn__txt">Add to Cart</span>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                      </a>
+                      <a href="#" class="btn btn_success">
+                        <span class="btn__txt">Buy it now</span>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                        <i class="btn__bg" aria-hidden="true"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1441,7 +1113,303 @@
           </div>
         </section>
 
-        <!-- all collection shop area end -->
+        <!--  product details shop area end -->
+
+        <section class="descript-review-area all-products-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-9">
+                <ul
+                  class="nav nav-tabs justify-content-start"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home"
+                      type="button"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                    >
+                      Description
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      Specifications
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact"
+                      aria-selected="false"
+                    >
+                      Shipping Policy
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="home"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                  >
+                    <div class="product-full-description">
+                      <p>
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet, nonummy id, imperdiet feugiat, pede.
+                        Sed lectus. Donec mollis hendrerit risus. Phasellus nec
+                        sem in justo pellentesque facilisis. Etiam imperdiet
+                        imperdiet orci. Nunc nec neque. Phasellus leo dolor,
+                        tempus non, auctor et, hendrerit quis, nisi. Curabitur
+                        ligula sapien, tincidunt non, euismod vitae, posuere
+                        imperdiet, leo. Maecenas malesuada.
+                      </p>
+                      <p>
+                        Praesent congue erat at massa. Sed cursus turpis vitae
+                        tortor. Donec posuere vulputate arcu. Phasellus accumsan
+                        cursus velit. Vestibulum ante ipsum primis in faucibus
+                        orci luctus et ultrices posuere cubilia Curae; Sed
+                        aliquam, nisi quis porttitor congue, elit erat euismod
+                        orci, ac placerat dolor lectus quis orci. Phasellus
+                        consectetuer vestibulum elit. Aenean tellus metus,
+                        bibendum sed, posuere ac, mattis non, nunc. Vestibulum
+                        fringilla pede sit amet augue. In turpis. Pellentesque
+                        posuere.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="profile"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                  >
+                    <div class="specifiactions-wrap">
+                      <table class="table table-bordered">
+                        <tr>
+                          <th>Title</th>
+                          <td>W. Men Formal T-shirt</td>
+                        </tr>
+                        <tr>
+                          <th>Category</th>
+                          <td>Men Fashion</td>
+                        </tr>
+                        <tr>
+                          <th>Size</th>
+                          <td>M</td>
+                        </tr>
+                        <tr>
+                          <th>Color</th>
+                          <td>Skyblue</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="contact"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                  >
+                    <div class="shipping-policy-wrap">
+                      <div class="shipping-policy-content">
+                        <p>
+                          At Minimalin, we are committed to delivering your
+                          orders swiftly and efficiently. Our Shipping Policy
+                          outlines the details of our shipping process to ensure
+                          a seamless shopping experience for you.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Processing Time:**</h6>
+                        <p>
+                          Orders are typically processed within 1-2 business
+                          days from the time of purchase. During peak seasons or
+                          promotional events, processing times may be slightly
+                          extended, but we always strive to get your order ready
+                          for shipment as quickly as possible.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Shipping Methods:**</h6>
+                        <p>
+                          We offer several shipping options to cater to your
+                          preferences. Our standard shipping option provides
+                          reliable delivery within [X] business days. For those
+                          who need their orders expedited, we also offer express
+                          shipping with delivery within [X] business days.
+                          Please note that shipping times may vary based on your
+                          location.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Shipping Costs:**</h6>
+                        <p>
+                          Shipping costs are calculated based on your order's
+                          weight, dimensions, destination, and chosen shipping
+                          method. You can view the shipping cost for your order
+                          during the checkout process before finalizing your
+                          purchase. We occasionally offer free shipping
+                          promotions, so keep an eye out for those special
+                          deals.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Order Tracking:**</h6>
+                        <p>
+                          Once your order is shipped, you will receive a
+                          confirmation email containing a tracking number. You
+                          can use this tracking number to monitor the status and
+                          progress of your shipment. Tracking information may
+                          take up to 24 hours to update after your order has
+                          been dispatched.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Shipping Restrictions:**</h6>
+                        <p>
+                          For international orders, please be aware that customs
+                          and import duties may apply depending on your
+                          country's regulations. Any additional charges for
+                          customs clearance are the responsibility of the
+                          recipient. We recommend contacting your local customs
+                          office for more information about these potential
+                          fees.
+                        </p>
+                      </div>
+                      <div class="shipping-policy-content">
+                        <h6>**Customs and Duties:**</h6>
+                        <p>
+                          For international orders, please be aware that customs
+                          and import duties may apply depending on your
+                          country's regulations. Any additional charges for
+                          customs clearance are the responsibility of the
+                          recipient. We recommend contacting your local customs
+                          office for more information about these potential
+                          fees.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="related-products-wrap">
+                  <div class="related-product-items">
+                    <div class="product-img">
+                      <img
+                        src="./assets/img/products/men-product-1.webp"
+                        alt="related_product"
+                      />
+                    </div>
+                    <div class="product-text">
+                      <div class="product-title">
+                        <h6>W. Men Formal T-shirt</h6>
+                      </div>
+                      <div class="product-price">
+                        <span class="old-price">Tk 2600.00</span>
+                        <span class="new-price">Tk 2200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-product-items">
+                    <div class="product-img">
+                      <img
+                        src="./assets/img/products/men-product-1.webp"
+                        alt="related_product"
+                      />
+                    </div>
+                    <div class="product-text">
+                      <div class="product-title">
+                        <h6>W. Men Formal T-shirt</h6>
+                      </div>
+                      <div class="product-price">
+                        <span class="old-price">Tk 2600.00</span>
+                        <span class="new-price">Tk 2200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-product-items">
+                    <div class="product-img">
+                      <img
+                        src="./assets/img/products/men-product-1.webp"
+                        alt="related_product"
+                      />
+                    </div>
+                    <div class="product-text">
+                      <div class="product-title">
+                        <h6>W. Men Formal T-shirt</h6>
+                      </div>
+                      <div class="product-price">
+                        <span class="old-price">Tk 2600.00</span>
+                        <span class="new-price">Tk 2200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-product-items">
+                    <div class="product-img">
+                      <img
+                        src="./assets/img/products/men-product-1.webp"
+                        alt="related_product"
+                      />
+                    </div>
+                    <div class="product-text">
+                      <div class="product-title">
+                        <h6>W. Men Formal T-shirt</h6>
+                      </div>
+                      <div class="product-price">
+                        <span class="old-price">Tk 2600.00</span>
+                        <span class="new-price">Tk 2200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-product-items">
+                    <div class="product-img">
+                      <img
+                        src="./assets/img/products/men-product-1.webp"
+                        alt="related_product"
+                      />
+                    </div>
+                    <div class="product-text">
+                      <div class="product-title">
+                        <h6>W. Men Formal T-shirt</h6>
+                      </div>
+                      <div class="product-price">
+                        <span class="old-price">Tk 2600.00</span>
+                        <span class="new-price">Tk 2200.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <!-- footer area start  -->
@@ -1619,284 +1587,7 @@
         </div>
       </div>
       <!-- offcanvas end  -->
-
-      <!-- view modal start  -->
-
-      <div
-        class="modal fade"
-        id="viewModal"
-        aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
-      >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-body p-5">
-              <div class="d-flex justify-content-end">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/img/products/men-product-1.webp"
-                      alt="product"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="product-details-wrap">
-                    <div class="product-name">
-                      <h4>W. Men Formal T-shirt</h4>
-                    </div>
-                    <div class="product-price">
-                      <span class="old-price">Tk 2600.00</span>
-                      <span class="new-price">Tk 2200.00</span>
-                    </div>
-                    <div class="product-description">
-                      <p>
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum....
-                      </p>
-                    </div>
-                    <div class="product-size">
-                      <select
-                        class="form-select form-select mb-3"
-                        aria-label=".form-select example"
-                      >
-                        <option selected>Product Size...</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                        <option value="4">Extra Large</option>
-                      </select>
-                    </div>
-                    <div class="product-color">
-                      <select
-                        class="form-select form-select mb-3"
-                        aria-label=".form-select example"
-                      >
-                        <option selected>Product Color...</option>
-                        <option value="1">Red</option>
-                        <option value="2">Green</option>
-                        <option value="3">Blue</option>
-                        <option value="4">Yellow Large</option>
-                      </select>
-                    </div>
-                    <div class="product-cart-wrap">
-                      <div class="product-countdown">
-                        <button class="product-decrease">
-                          <i class="fa-solid fa-minus"></i>
-                        </button>
-                        <input type="number" class="product-countdown-input" />
-                        <button class="product-increase">
-                          <i class="fa-solid fa-plus"></i>
-                        </button>
-                      </div>
-                      <div class="product-cart-btn">
-                        <a href="#" class="btn btn_primary">
-                          <span class="btn__txt">Add to Cart</span>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- view modal end -->
-
-      <!-- compare modal start  -->
-
-      <div
-        class="modal fade"
-        id="compareModal"
-        aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title" id="exampleModalToggleLabel">
-                Compare Product
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Action</th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                  </tr>
-                  <tr>
-                    <td>Product image</td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Product description</td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Product Availibility</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- compare modal end -->
-
-      <!-- bootstrap components body end -->
+      <!-- bootstrap components body end  -->
 
       <!-- mobile footer fixed start  -->
 
@@ -1968,6 +1659,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/filter-products.js"></script>
+    <script src="./assets/js/products-cart-count.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

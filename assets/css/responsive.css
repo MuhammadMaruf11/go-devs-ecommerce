@@ -49,7 +49,10 @@
     width: 100%;
     z-index: 99999;
     background: #fff;
+    top: 0;
+    left: 0;
   }
+
   .header-logo a {
     display: inline-block;
     width: 130px;
@@ -316,6 +319,8 @@
     width: 100%;
     z-index: 99999;
     background: #fff;
+    top: 0;
+    left: 0;
   }
 
   .btn {
