@@ -1596,7 +1596,7 @@
             <strong>Subtotal:</strong>
             <strong class="new-price">Tk <span>2200.00</span> BDT</strong>
           </div>
-          <div class="product-cart-btn">
+          <div class="product-cart-btn my-4">
             <a href="#" class="btn btn_primary">
               <span class="btn__txt">View Cart</span>
               <i class="btn__bg" aria-hidden="true"></i>
@@ -1631,7 +1631,7 @@
       >
         <div class="modal-dialog modal-lg modal-dialog-centered">
           <div class="modal-content rounded-4">
-            <div class="modal-body p-5">
+            <div class="modal-body p-4">
               <div class="d-flex justify-content-end">
                 <button
                   type="button"
@@ -1667,42 +1667,83 @@
                         ut eros et nisl sagittis vestibulum....
                       </p>
                     </div>
+                    <!-- Product Size -->
                     <div class="product-size">
-                      <select
-                        class="form-select form-select mb-3"
-                        aria-label=".form-select example"
-                      >
-                        <option selected>Product Size...</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                        <option value="4">Extra Large</option>
-                      </select>
+                      <h4 class="product-option-title">Select Size</h4>
+                      <div class="size-options">
+                        <div class="size-option" data-size="Small">Small</div>
+                        <div class="size-option" data-size="Medium">Medium</div>
+                        <div class="size-option" data-size="Large">Large</div>
+                        <div class="size-option" data-size="Extra Large">
+                          Extra Large
+                        </div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedSize"
+                        id="selected-size"
+                        value=""
+                      />
                     </div>
+
+                    <!-- Product Color -->
                     <div class="product-color">
-                      <select
-                        class="form-select form-select mb-3"
-                        aria-label=".form-select example"
-                      >
-                        <option selected>Product Color...</option>
-                        <option value="1">Red</option>
-                        <option value="2">Green</option>
-                        <option value="3">Blue</option>
-                        <option value="4">Yellow Large</option>
-                      </select>
+                      <h4 class="product-option-title">Select Color</h4>
+                      <div class="color-options">
+                        <div
+                          class="color-option"
+                          data-color="Red"
+                          style="background-color: #ff0000"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Green"
+                          style="background-color: #00ff00"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Blue"
+                          style="background-color: #0000ff"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Yellow"
+                          style="background-color: #ffff00"
+                        ></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedColor"
+                        id="selected-color"
+                        value=""
+                      />
                     </div>
+                    <!-- product cart  -->
                     <div class="product-cart-wrap">
                       <div class="product-countdown">
                         <button class="product-decrease">
                           <i class="fa-solid fa-minus"></i>
                         </button>
-                        <input type="number" class="product-countdown-input" />
+                        <input
+                          type="number"
+                          min="1"
+                          value="1"
+                          placeholder="1"
+                          class="product-countdown-input"
+                        />
                         <button class="product-increase">
                           <i class="fa-solid fa-plus"></i>
                         </button>
                       </div>
-                      <div class="product-cart-btn">
-                        <a href="#" class="btn btn_primary">
+                      <div class="product-cart-btn mx-auto">
+                        <a
+                          href=""
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#cartProdcut"
+                          aria-controls="cartProdcut"
+                          class="btn btn_primary me-3"
+                        >
                           <span class="btn__txt">Add to Cart</span>
                           <i class="btn__bg" aria-hidden="true"></i>
                           <i class="btn__bg" aria-hidden="true"></i>
@@ -1968,6 +2009,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/filter-products.js"></script>
+    <script src="./assets/js/products-cart-count.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

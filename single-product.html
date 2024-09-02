@@ -1013,7 +1013,7 @@
         <!--  product details area start  -->
 
         <section class="product-details-area">
-          <div class="container bg-white py-3">
+          <div class="container bg-white py-3 box-shadow">
             <div class="row">
               <div class="col-xl-5">
                 <div class="product-img-wrap">
@@ -1043,30 +1043,58 @@
                       sagittis vestibulum....
                     </p>
                   </div>
+                  <!-- Product Size -->
                   <div class="product-size mb-4">
-                    <select
-                      class="form-select form-select mb-3"
-                      aria-label=".form-select example"
-                    >
-                      <option selected="">Product Size...</option>
-                      <option value="1">Small</option>
-                      <option value="2">Medium</option>
-                      <option value="3">Large</option>
-                      <option value="4">Extra Large</option>
-                    </select>
+                    <h4 class="product-option-title">Select Size</h4>
+                    <div class="size-options">
+                      <div class="size-option" data-size="Small">Small</div>
+                      <div class="size-option" data-size="Medium">Medium</div>
+                      <div class="size-option" data-size="Large">Large</div>
+                      <div class="size-option" data-size="Extra Large">
+                        Extra Large
+                      </div>
+                    </div>
+                    <input
+                      type="hidden"
+                      name="selectedSize"
+                      id="selected-size"
+                      value=""
+                    />
                   </div>
+
+                  <!-- Product Color -->
                   <div class="product-color mb-4">
-                    <select
-                      class="form-select form-select mb-3"
-                      aria-label=".form-select example"
-                    >
-                      <option selected="">Product Color...</option>
-                      <option value="1">Red</option>
-                      <option value="2">Green</option>
-                      <option value="3">Blue</option>
-                      <option value="4">Yellow Large</option>
-                    </select>
+                    <h4 class="product-option-title">Select Color</h4>
+                    <div class="color-options">
+                      <div
+                        class="color-option"
+                        data-color="Red"
+                        style="background-color: #ff0000"
+                      ></div>
+                      <div
+                        class="color-option"
+                        data-color="Green"
+                        style="background-color: #00ff00"
+                      ></div>
+                      <div
+                        class="color-option"
+                        data-color="Blue"
+                        style="background-color: #0000ff"
+                      ></div>
+                      <div
+                        class="color-option"
+                        data-color="Yellow"
+                        style="background-color: #ffff00"
+                      ></div>
+                    </div>
+                    <input
+                      type="hidden"
+                      name="selectedColor"
+                      id="selected-color"
+                      value=""
+                    />
                   </div>
+                  <!-- product cart  -->
                   <div class="product-cart-wrap">
                     <div class="product-countdown">
                       <button class="product-decrease">
@@ -1083,7 +1111,7 @@
                         <i class="fa-solid fa-plus"></i>
                       </button>
                     </div>
-                    <div class="product-cart-btn mx-auto">
+                    <div class="product-cart-btns mx-auto">
                       <a
                         href=""
                         type="button"
@@ -1115,7 +1143,9 @@
 
         <!--  product details shop area end -->
 
-        <section class="descript-review-area all-products-area">
+        <!-- description and specifications area start  -->
+
+        <section class="descript-specs-area all-products-area">
           <div class="container">
             <div class="row">
               <div class="col-9">
@@ -1167,7 +1197,7 @@
                     </button>
                   </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content box-shadow" id="myTabContent">
                   <div
                     class="tab-pane fade show active"
                     id="home"
@@ -1319,7 +1349,7 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <div class="related-products-wrap">
+                <div class="related-products-wrap box-shadow">
                   <div class="related-product-items">
                     <div class="product-img">
                       <img
@@ -1410,6 +1440,586 @@
             </div>
           </div>
         </section>
+
+        <!-- description and specifications area end  -->
+
+        <!-- review area start  -->
+
+        <section class="review-area">
+          <div class="container bg-white py-3 box-shadow">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="review-title">
+                  <h3>Customer Reviews</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="review-widget">
+                  <div class="review-content">
+                    <p>
+                      <span>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span>5.00 </span> out of <span>5 </span>
+                    </p>
+                    <p>Based on <span>2 </span>reviews</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="review-widget">
+                  <div
+                    class="review-star-items"
+                    data-number="2"
+                    data-total="10"
+                  >
+                    <div class="item-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="item-bar">
+                      <div class="item-bar-fill"></div>
+                    </div>
+                    <div class="item-number">2</div>
+                  </div>
+                  <div
+                    class="review-star-items"
+                    data-number="4"
+                    data-total="10"
+                  >
+                    <div class="item-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="item-bar">
+                      <div class="item-bar-fill"></div>
+                    </div>
+                    <div class="item-number">4</div>
+                  </div>
+                  <div
+                    class="review-star-items"
+                    data-number="3"
+                    data-total="10"
+                  >
+                    <div class="item-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="item-bar">
+                      <div class="item-bar-fill"></div>
+                    </div>
+                    <div class="item-number">3</div>
+                  </div>
+                  <div
+                    class="review-star-items"
+                    data-number="1"
+                    data-total="10"
+                  >
+                    <div class="item-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="item-bar">
+                      <div class="item-bar-fill"></div>
+                    </div>
+                    <div class="item-number">1</div>
+                  </div>
+                  <div
+                    class="review-star-items"
+                    data-number="0"
+                    data-total="10"
+                  >
+                    <div class="item-stars">
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="item-bar">
+                      <div class="item-bar-fill"></div>
+                    </div>
+                    <div class="item-number">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="review-widget">
+                  <div class="write-review-btn text-center">
+                    <a href="#" class="btn btn_success">
+                      <span class="btn__txt">Write a review</span>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- review area end -->
+
+        <div class="related-product-area">
+          <div class="container">
+            <div class="related-product-active">
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <!-- <div
+              class="related-product-button"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="btn-prev" data-aos="fade-right" data-aos-delay="200">
+                <i class="fa fa-arrow-left"></i>
+              </div>
+              <div class="btn-next" data-aos="fade-left" data-aos-delay="200">
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </div> -->
+          </div>
+        </div>
       </main>
 
       <!-- footer area start  -->
@@ -1564,7 +2174,7 @@
             <strong>Subtotal:</strong>
             <strong class="new-price">Tk <span>2200.00</span> BDT</strong>
           </div>
-          <div class="product-cart-btn">
+          <div class="product-cart-btn my-4">
             <a href="#" class="btn btn_primary">
               <span class="btn__txt">View Cart</span>
               <i class="btn__bg" aria-hidden="true"></i>
@@ -1587,7 +2197,325 @@
         </div>
       </div>
       <!-- offcanvas end  -->
-      <!-- bootstrap components body end  -->
+
+      <!-- view modal start  -->
+
+      <div
+        class="modal fade"
+        id="viewModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-body p-4">
+              <div class="d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="product-img">
+                    <img
+                      src="./assets/img/products/men-product-1.webp"
+                      alt="product"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="product-details-wrap">
+                    <div class="product-name">
+                      <h4>W. Men Formal T-shirt</h4>
+                    </div>
+                    <div class="product-price">
+                      <span class="old-price">Tk 2600.00</span>
+                      <span class="new-price">Tk 2200.00</span>
+                    </div>
+                    <div class="product-description">
+                      <p>
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum....
+                      </p>
+                    </div>
+                    <!-- Product Size -->
+                    <div class="product-size mb-4">
+                      <h4 class="product-option-title">Select Size</h4>
+                      <div class="size-options">
+                        <div class="size-option" data-size="Small">Small</div>
+                        <div class="size-option" data-size="Medium">Medium</div>
+                        <div class="size-option" data-size="Large">Large</div>
+                        <div class="size-option" data-size="Extra Large">
+                          Extra Large
+                        </div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedSize"
+                        id="selected-size"
+                        value=""
+                      />
+                    </div>
+
+                    <!-- Product Color -->
+                    <div class="product-color mb-4">
+                      <h4 class="product-option-title">Select Color</h4>
+                      <div class="color-options">
+                        <div
+                          class="color-option"
+                          data-color="Red"
+                          style="background-color: #ff0000"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Green"
+                          style="background-color: #00ff00"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Blue"
+                          style="background-color: #0000ff"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Yellow"
+                          style="background-color: #ffff00"
+                        ></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedColor"
+                        id="selected-color"
+                        value=""
+                      />
+                    </div>
+                    <!-- product cart  -->
+                    <div class="product-cart-wrap">
+                      <div class="product-countdown">
+                        <button class="product-decrease">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input
+                          type="number"
+                          min="1"
+                          value="1"
+                          placeholder="1"
+                          class="product-countdown-input"
+                        />
+                        <button class="product-increase">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="product-cart-btns mx-auto">
+                        <a
+                          href=""
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#cartProdcut"
+                          aria-controls="cartProdcut"
+                          class="btn btn_primary me-3"
+                        >
+                          <span class="btn__txt">Add to Cart</span>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- view modal end -->
+
+      <!-- compare modal start  -->
+
+      <div
+        class="modal fade"
+        id="compareModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalToggleLabel">
+                Compare Product
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Action</th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                  </tr>
+                  <tr>
+                    <td>Product image</td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Product description</td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Product Availibility</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- compare modal end -->
+
+      <!-- bootstrap components body end -->
 
       <!-- mobile footer fixed start  -->
 
@@ -1658,8 +2586,10 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
-    <script src="./assets/js/filter-products.js"></script>
+    <script src="./assets/js/related-product-slide-active.js"></script>
+    <script src="./assets/js/products-size-color.js"></script>
     <script src="./assets/js/products-cart-count.js"></script>
+    <script src="./assets/js/review-star-style.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
