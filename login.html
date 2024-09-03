@@ -28,6 +28,7 @@
   </head>
   <body>
     <div id="content">
+      <!-- header start  -->
       <header class="header-area">
         <div class="header-top d-lg-block d-none">
           <div class="container">
@@ -1007,436 +1008,69 @@
           </ul>
         </div>
       </header>
-
+      <!-- header end  -->
       <main>
-        <!-- banner area start  -->
-
-        <!-- <section class="common-banner-area"></section> -->
-
-        <!-- banner area end -->
-
-        <!--  all collection area start  -->
-
-        <section class="all-collection-area">
+        <div class="login-area">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <form class="filter-wrap mb-lg-0">
-                  <!-- Filter by Sort -->
-                  <div class="filter-group">
-                    <label for="sort-filter">Sort By:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-low-high"
-                        value="5"
-                      />
-                      <label for="p-low-high"> Price: Low to High </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-hight-low"
-                        value="5"
-                      />
-                      <label for="p-hight-low"> Price: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-high-low"
-                        value="5"
-                      />
-                      <label for="r-high-low"> Rating: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-low-high"
-                        value="5"
-                      />
-                      <label for="r-low-high"> Rating: Low to High </label>
-                    </div>
-                  </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="login-form">
+                  <div class="materialContainer">
+                    <div class="box">
+                      <div class="title">LOGIN</div>
 
-                  <!-- Filter by Categories -->
-                  <div class="filter-group">
-                    <label for="category-filter">Categories:</label>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="all" value="5" />
-                      <label for="all"> All Categories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="men" value="5" />
-                      <label for="men"> Men Fasion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="women" value="5" />
-                      <label for="women"> Women Fashion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="accessories"
-                        value="5"
-                      />
-                      <label for="accessories"> Accessories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="footwear"
-                        value="5"
-                      />
-                      <label for="footwear"> Footwear </label>
-                    </div>
-                  </div>
+                      <div class="input">
+                        <label for="name">Username</label>
+                        <input type="text" name="name" id="name" />
+                        <span class="spin"></span>
+                      </div>
 
-                  <!-- Filter by Rating -->
-                  <div class="filter-group">
-                    <label>Rating:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-5"
-                        value="5"
-                      />
-                      <label for="rating-5">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-4"
-                        value="4"
-                      />
-                      <label for="rating-4">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-3"
-                        value="3"
-                      />
-                      <label for="rating-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-2"
-                        value="2"
-                      />
-                      <label for="rating-2">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-1"
-                        value="1"
-                      />
-                      <label for="rating-1"> <i class="fa fa-star"></i></label>
-                    </div>
-                  </div>
+                      <div class="input">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" />
+                        <span class="spin"></span>
+                      </div>
 
-                  <!-- Filter by Price Range -->
-                  <div class="filter-group range-slider-wrap">
-                    <label for="range-slider">Price Range:</label>
-                    <div id="range-slider">
-                      <div id="range-slider-track" class="range-slider">
+                      <div class="button login">
+                        <button>
+                          <span>GO</span> <i class="fa fa-check"></i>
+                        </button>
+                      </div>
+
+                      <a href="" class="pass-forgot">Forgot your password?</a>
+                    </div>
+
+                    <div class="overbox">
+                      <div class="material-button alt-2">
+                        <span class="shape"></span>
+                      </div>
+
+                      <div class="title">REGISTER</div>
+
+                      <div class="input">
+                        <label for="regname">Username</label>
+                        <input type="text" name="regname" id="regname" />
+                        <span class="spin"></span>
+                      </div>
+
+                      <div class="input">
+                        <label for="regpass">Password</label>
+                        <input type="password" name="regpass" id="regpass" />
+                        <span class="spin"></span>
+                      </div>
+
+                      <div class="input">
+                        <label for="reregpass">Repeat Password</label>
                         <input
-                          type="range"
-                          id="min-range"
-                          min="0"
-                          max="10000"
-                          value="10"
+                          type="password"
+                          name="reregpass"
+                          id="reregpass"
                         />
-                        <input
-                          type="range"
-                          id="max-range"
-                          min="0"
-                          max="10000"
-                          value="10000"
-                        />
+                        <span class="spin"></span>
                       </div>
-                      <div class="range-values">
-                        <p>Min: <span id="min-value">10</span></p>
-                        <p>Max: <span id="max-value">90</span></p>
-                      </div>
-                    </div>
-                    <!-- Submit and Reset Buttons -->
-                    <div class="filter-items">
-                      <button
-                        type="submit"
-                        id="filter-submit"
-                        class="btn btn_success"
-                      >
-                        <span class="btn__txt">Submit</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                      <button
-                        type="reset"
-                        id="filter-reset"
-                        class="btn btn_info"
-                      >
-                        <span class="btn__txt">Reset</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
 
-              <div class="col-lg-9">
-                <div class="all-collection-products">
-                  <div class="row">
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
+                      <div class="button">
+                        <button><span>NEXT</span></button>
                       </div>
                     </div>
                   </div>
@@ -1444,11 +1078,8 @@
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- all collection shop area end -->
+        </div>
       </main>
-
       <!-- footer area start  -->
 
       <footer class="footer-area">
@@ -1624,324 +1255,6 @@
         </div>
       </div>
       <!-- offcanvas end  -->
-
-      <!-- view modal start  -->
-
-      <div
-        class="modal fade"
-        id="viewModal"
-        aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
-      >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content rounded-4">
-            <div class="modal-body p-4">
-              <div class="d-flex justify-content-end">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="product-img">
-                    <img
-                      src="./assets/img/products/men-product-1.webp"
-                      alt="product"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="product-details-wrap">
-                    <div class="product-name">
-                      <h4>W. Men Formal T-shirt</h4>
-                    </div>
-                    <div class="product-price">
-                      <span class="old-price">Tk 2600.00</span>
-                      <span class="new-price">Tk 2200.00</span>
-                    </div>
-                    <div class="product-description">
-                      <p>
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum....
-                      </p>
-                    </div>
-                    <!-- Product Size -->
-                    <div class="product-size">
-                      <h4 class="product-option-title">Select Size</h4>
-                      <div class="size-options">
-                        <div class="size-option" data-size="Small">Small</div>
-                        <div class="size-option" data-size="Medium">Medium</div>
-                        <div class="size-option" data-size="Large">Large</div>
-                        <div class="size-option" data-size="Extra Large">
-                          Extra Large
-                        </div>
-                      </div>
-                      <input
-                        type="hidden"
-                        name="selectedSize"
-                        id="selected-size"
-                        value=""
-                      />
-                    </div>
-
-                    <!-- Product Color -->
-                    <div class="product-color">
-                      <h4 class="product-option-title">Select Color</h4>
-                      <div class="color-options">
-                        <div
-                          class="color-option"
-                          data-color="Red"
-                          style="background-color: #ff0000"
-                        ></div>
-                        <div
-                          class="color-option"
-                          data-color="Green"
-                          style="background-color: #00ff00"
-                        ></div>
-                        <div
-                          class="color-option"
-                          data-color="Blue"
-                          style="background-color: #0000ff"
-                        ></div>
-                        <div
-                          class="color-option"
-                          data-color="Yellow"
-                          style="background-color: #ffff00"
-                        ></div>
-                      </div>
-                      <input
-                        type="hidden"
-                        name="selectedColor"
-                        id="selected-color"
-                        value=""
-                      />
-                    </div>
-                    <!-- product cart  -->
-                    <div class="product-cart-wrap">
-                      <div class="product-countdown">
-                        <button class="product-decrease">
-                          <i class="fa-solid fa-minus"></i>
-                        </button>
-                        <input
-                          type="number"
-                          min="1"
-                          value="1"
-                          placeholder="1"
-                          class="product-countdown-input"
-                        />
-                        <button class="product-increase">
-                          <i class="fa-solid fa-plus"></i>
-                        </button>
-                      </div>
-                      <div class="product-cart-btn mx-auto">
-                        <a
-                          href=""
-                          type="button"
-                          data-bs-toggle="offcanvas"
-                          data-bs-target="#cartProdcut"
-                          aria-controls="cartProdcut"
-                          class="btn btn_primary me-3"
-                        >
-                          <span class="btn__txt">Add to Cart</span>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- view modal end -->
-
-      <!-- compare modal start  -->
-
-      <div
-        class="modal fade"
-        id="compareModal"
-        aria-hidden="true"
-        aria-labelledby="exampleModalToggleLabel"
-        tabindex="-1"
-      >
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title" id="exampleModalToggleLabel">
-                Compare Product
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Action</th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                    <th>
-                      <a href="javascript:void(0)"> Remove </a>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                    <td>Product name</td>
-                  </tr>
-                  <tr>
-                    <td>Product image</td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div class="compare-product-items">
-                        <div class="item-img">
-                          <img
-                            src="./assets/img/products/men-product-1.webp"
-                            alt="product"
-                          />
-                        </div>
-                        <div class="product-price">
-                          <h4 class="new-price">Tk <span>2200.00</span></h4>
-                        </div>
-                        <div class="product-link">
-                          <a href="#">View Product</a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Product description</td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                    <td>
-                      <p class="compare-product-description">
-                        Integer ante arcu, accumsan a, consectetuer eget,
-                        posuere ut, mauris. Praesent adipiscing. Phasellus
-                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
-                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
-                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
-                        ultricies sit amet,...
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Product Availibility</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                    <td>Available In stock</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- compare modal end -->
-
       <!-- bootstrap components body end -->
 
       <!-- mobile footer fixed start  -->
@@ -2013,8 +1326,11 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
-    <script src="./assets/js/filter-products.js"></script>
+    <script src="./assets/js/related-product-slide-active.js"></script>
+    <script src="./assets/js/products-size-color.js"></script>
     <script src="./assets/js/products-cart-count.js"></script>
+    <script src="./assets/js/review-star-style.js"></script>
+    <script src="./assets/js/login-form.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

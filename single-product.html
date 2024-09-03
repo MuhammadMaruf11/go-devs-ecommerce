@@ -573,12 +573,17 @@
                         <a href="#">Wishlist</a>
                       </li>
                       <li>
-                        <a href="#">Login</a>
+                        <a href="./login.html">Login</a>
                       </li>
                     </ul>
                   </div>
                   <div class="cart-wrap">
-                    <a href="javascript:void(0)">
+                    <a
+                      href="javascript:void(0)"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#cartProdcut"
+                      aria-controls="cartProdcut"
+                    >
                       <i class="fa fa-cart-shopping"></i>
                     </a>
                   </div>
@@ -1580,9 +1585,17 @@
 
         <!-- review area end -->
 
+        <!-- related product area start feature product -->
         <div class="related-product-area">
-          <div class="container">
-            <div class="related-product-active">
+          <div class="container bg-white p-4">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="review-title">
+                  <h2>Feature Products</h2>
+                </div>
+              </div>
+            </div>
+            <div class="related-product-active feature-product">
               <div class="swiper-container">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -2004,22 +2017,466 @@
                   </div>
                 </div>
               </div>
+              <!-- Add Arrows -->
+              <div class="related-product-button">
+                <div class="btn-prev">
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <div class="btn-next">
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+              </div>
             </div>
-            <!-- Add Arrows -->
-            <!-- <div
-              class="related-product-button"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div class="btn-prev" data-aos="fade-right" data-aos-delay="200">
-                <i class="fa fa-arrow-left"></i>
-              </div>
-              <div class="btn-next" data-aos="fade-left" data-aos-delay="200">
-                <i class="fa fa-arrow-right"></i>
-              </div>
-            </div> -->
           </div>
         </div>
+
+        <!-- related product area start feature product  -->
+
+        <!-- related product area start new arrivals product  -->
+        <div class="related-product-area">
+          <div class="container bg-white p-4">
+            <div class="row">
+              <div class="col-12 text-center">
+                <div class="review-title">
+                  <h2>New Arrivals Products</h2>
+                </div>
+              </div>
+            </div>
+            <div class="related-product-active new-product">
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide single-slide">
+                    <div class="product-wrap">
+                      <div class="product-image">
+                        <a href="#">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </a>
+                        <div class="product-action-btn">
+                          <!-- action button  start -->
+
+                          <button
+                            data-bs-toggle="modal"
+                            href="#viewModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-eye"></i>
+                          </button>
+                          <button
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#cartProdcut"
+                            aria-controls="cartProdcut"
+                          >
+                            <i class="fa-solid fa-cart-shopping"></i>
+                          </button>
+                          <button><i class="fa-solid fa-heart"></i></button>
+                          <button
+                            data-bs-toggle="modal"
+                            href="#compareModal"
+                            role="button"
+                          >
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                          </button>
+
+                          <!-- action button end  -->
+                        </div>
+                      </div>
+                      <div class="product-content">
+                        <div class="product-title">
+                          <h4>
+                            <a href="#"> W. Men Formal T-shirt </a>
+                          </h4>
+                        </div>
+                        <div class="product-price">
+                          <p class="old-price">Tk <span>2600.00</span></p>
+                          <p class="new-price">Tk <span>2200.00</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+              <div class="related-product-button">
+                <div class="btn-prev">
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <div class="btn-next">
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- related product area start new arrivals product -->
       </main>
 
       <!-- footer area start  -->
