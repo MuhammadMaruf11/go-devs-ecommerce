@@ -1233,7 +1233,7 @@
             <strong class="new-price">Tk <span>2200.00</span> BDT</strong>
           </div>
           <div class="product-cart-btn my-4">
-            <a href="#" class="btn btn_primary">
+            <a href="./cart.html" class="btn btn_primary">
               <span class="btn__txt">View Cart</span>
               <i class="btn__bg" aria-hidden="true"></i>
               <i class="btn__bg" aria-hidden="true"></i>
@@ -1255,6 +1255,324 @@
         </div>
       </div>
       <!-- offcanvas end  -->
+
+      <!-- view modal start  -->
+
+      <div
+        class="modal fade"
+        id="viewModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-body p-4">
+              <div class="d-flex justify-content-end">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="product-img">
+                    <img
+                      src="./assets/img/products/men-product-1.webp"
+                      alt="product"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="product-details-wrap">
+                    <div class="product-name">
+                      <h4>W. Men Formal T-shirt</h4>
+                    </div>
+                    <div class="product-price">
+                      <span class="old-price">Tk 2600.00</span>
+                      <span class="new-price">Tk 2200.00</span>
+                    </div>
+                    <div class="product-description">
+                      <p>
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum....
+                      </p>
+                    </div>
+                    <!-- Product Size -->
+                    <div class="product-size mb-4">
+                      <h4 class="product-option-title">Select Size</h4>
+                      <div class="size-options">
+                        <div class="size-option" data-size="Small">Small</div>
+                        <div class="size-option" data-size="Medium">Medium</div>
+                        <div class="size-option" data-size="Large">Large</div>
+                        <div class="size-option" data-size="Extra Large">
+                          Extra Large
+                        </div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedSize"
+                        id="selected-size"
+                        value=""
+                      />
+                    </div>
+
+                    <!-- Product Color -->
+                    <div class="product-color mb-4">
+                      <h4 class="product-option-title">Select Color</h4>
+                      <div class="color-options">
+                        <div
+                          class="color-option"
+                          data-color="Red"
+                          style="background-color: #ff0000"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Green"
+                          style="background-color: #00ff00"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Blue"
+                          style="background-color: #0000ff"
+                        ></div>
+                        <div
+                          class="color-option"
+                          data-color="Yellow"
+                          style="background-color: #ffff00"
+                        ></div>
+                      </div>
+                      <input
+                        type="hidden"
+                        name="selectedColor"
+                        id="selected-color"
+                        value=""
+                      />
+                    </div>
+                    <!-- product cart  -->
+                    <div class="product-cart-wrap">
+                      <div class="product-countdown">
+                        <button class="product-decrease">
+                          <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input
+                          type="number"
+                          min="1"
+                          value="1"
+                          placeholder="1"
+                          class="product-countdown-input"
+                        />
+                        <button class="product-increase">
+                          <i class="fa-solid fa-plus"></i>
+                        </button>
+                      </div>
+                      <div class="product-cart-btns mx-auto">
+                        <a
+                          href=""
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#cartProdcut"
+                          aria-controls="cartProdcut"
+                          class="btn btn_primary me-3"
+                        >
+                          <span class="btn__txt">Add to Cart</span>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                          <i class="btn__bg" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- view modal end -->
+
+      <!-- compare modal start  -->
+
+      <div
+        class="modal fade"
+        id="compareModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalToggleLabel">
+                Compare Product
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Action</th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                    <th>
+                      <a href="javascript:void(0)"> Remove </a>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                    <td>Product name</td>
+                  </tr>
+                  <tr>
+                    <td>Product image</td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="compare-product-items">
+                        <div class="item-img">
+                          <img
+                            src="./assets/img/products/men-product-1.webp"
+                            alt="product"
+                          />
+                        </div>
+                        <div class="product-price">
+                          <h4 class="new-price">Tk <span>2200.00</span></h4>
+                        </div>
+                        <div class="product-link">
+                          <a href="#">View Product</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Product description</td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                    <td>
+                      <p class="compare-product-description">
+                        Integer ante arcu, accumsan a, consectetuer eget,
+                        posuere ut, mauris. Praesent adipiscing. Phasellus
+                        ullamcorper ipsum rutrum nunc. Nunc nonummy metus.
+                        Vestibulum volutpat pretium libero. Cras id dui. Aenean
+                        ut eros et nisl sagittis vestibulum. Nullam nulla eros,
+                        ultricies sit amet,...
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Product Availibility</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                    <td>Available In stock</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- compare modal end -->
+
       <!-- bootstrap components body end -->
 
       <!-- mobile footer fixed start  -->

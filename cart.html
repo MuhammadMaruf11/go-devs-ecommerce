@@ -28,6 +28,7 @@
   </head>
   <body>
     <div id="content">
+      <!-- header start  -->
       <header class="header-area">
         <div class="header-top d-lg-block d-none">
           <div class="container">
@@ -1007,448 +1008,139 @@
           </ul>
         </div>
       </header>
-
+      <!-- header end  -->
       <main>
-        <!-- banner area start  -->
+        <!-- contact info area start  -->
 
-        <!-- <section class="common-banner-area"></section> -->
-
-        <!-- banner area end -->
-
-        <!--  all collection area start  -->
-
-        <section class="all-collection-area">
-          <div class="container">
+        <section class="cart-area">
+          <div class="container bg-white p-4">
             <div class="row">
-              <div class="col-lg-3">
-                <form class="filter-wrap mb-lg-0">
-                  <!-- Filter by Sort -->
-                  <div class="filter-group">
-                    <label for="sort-filter">Sort By:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-low-high"
-                        value="5"
-                      />
-                      <label for="p-low-high"> Price: Low to High </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="p-hight-low"
-                        value="5"
-                      />
-                      <label for="p-hight-low"> Price: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-high-low"
-                        value="5"
-                      />
-                      <label for="r-high-low"> Rating: High to Low </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="r-low-high"
-                        value="5"
-                      />
-                      <label for="r-low-high"> Rating: Low to High </label>
-                    </div>
-                  </div>
-
-                  <!-- Filter by Categories -->
-                  <div class="filter-group">
-                    <label for="category-filter">Categories:</label>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="all" value="5" />
-                      <label for="all"> All Categories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="men" value="5" />
-                      <label for="men"> Men Fasion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input type="checkbox" name="sort" id="women" value="5" />
-                      <label for="women"> Women Fashion </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="accessories"
-                        value="5"
-                      />
-                      <label for="accessories"> Accessories </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="sort"
-                        id="footwear"
-                        value="5"
-                      />
-                      <label for="footwear"> Footwear </label>
-                    </div>
-                  </div>
-
-                  <!-- Filter by Rating -->
-                  <div class="filter-group">
-                    <label>Rating:</label>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-5"
-                        value="5"
-                      />
-                      <label for="rating-5">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-4"
-                        value="4"
-                      />
-                      <label for="rating-4">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-3"
-                        value="3"
-                      />
-                      <label for="rating-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-2"
-                        value="2"
-                      />
-                      <label for="rating-2">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                      </label>
-                    </div>
-                    <div class="filter-items">
-                      <input
-                        type="checkbox"
-                        name="rating"
-                        id="rating-1"
-                        value="1"
-                      />
-                      <label for="rating-1"> <i class="fa fa-star"></i></label>
-                    </div>
-                  </div>
-
-                  <!-- Filter by Price Range -->
-                  <div class="filter-group range-slider-wrap">
-                    <label for="range-slider">Price Range:</label>
-                    <div id="range-slider">
-                      <div id="range-slider-track" class="range-slider">
-                        <input
-                          type="range"
-                          id="min-range"
-                          min="0"
-                          max="10000"
-                          value="10"
-                        />
-                        <input
-                          type="range"
-                          id="max-range"
-                          min="0"
-                          max="10000"
-                          value="10000"
-                        />
-                      </div>
-                      <div class="range-values">
-                        <p>Min: <span id="min-value">10</span></p>
-                        <p>Max: <span id="max-value">90</span></p>
-                      </div>
-                    </div>
-                    <!-- Submit and Reset Buttons -->
-                    <div class="filter-items">
-                      <button
-                        type="submit"
-                        id="filter-submit"
-                        class="btn btn_success"
-                      >
-                        <span class="btn__txt">Submit</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                      <button
-                        type="reset"
-                        id="filter-reset"
-                        class="btn btn_info"
-                      >
-                        <span class="btn__txt">Reset</span>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                        <i class="btn__bg" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-
-              <div class="col-lg-9">
-                <div class="all-collection-products">
-                  <div class="row">
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
+              <div class="col-12">
+                <div class="cart-wrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Product Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal Price</th>
+                        <th>
+                          <button id="clearAllCart" class="btn btn_danger">
+                            <span class="btn__txt">Clear Cart</span>
+                            <i class="btn__bg" aria-hidden="true"></i>
+                            <i class="btn__bg" aria-hidden="true"></i>
+                            <i class="btn__bg" aria-hidden="true"></i>
+                            <i class="btn__bg" aria-hidden="true"></i>
+                          </button>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="cart-product-img">
                             <img
                               src="./assets/img/products/men-product-1.webp"
                               alt="product"
                             />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
                           </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
+                        </td>
+                        <td>
+                          <div class="cart-product-name">
+                            <a href="./single-product.html">
+                              W. Men Formal T-shirt
+                            </a>
                           </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
+                        </td>
+                        <td>
+                          <div class="cart-product-price">Tk 2,400.00</div>
+                        </td>
+                        <td>
+                          <div class="cart-quantity">
+                            <div class="product-countdown mx-auto">
+                              <button class="product-decrease">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input
+                                type="number"
+                                min="1"
+                                value="1"
+                                placeholder="1"
+                                class="product-countdown-input"
+                              />
+                              <button class="product-increase">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
+                        </td>
+                        <td>
+                          <div class="cart-subtotal-price">Tk 9,600.00</div>
+                        </td>
+                        <td>
+                          <div class="clear-single-cart">
+                            <i class="fa fa-times"></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="cart-product-img">
                             <img
                               src="./assets/img/products/men-product-1.webp"
                               alt="product"
                             />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
                           </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
+                        </td>
+                        <td>
+                          <div class="cart-product-name">
+                            <a href="./single-product.html">
+                              W. Men Formal T-shirt
+                            </a>
                           </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
+                        </td>
+                        <td>
+                          <div class="cart-product-price">Tk 2,400.00</div>
+                        </td>
+                        <td>
+                          <div class="cart-quantity">
+                            <div class="product-countdown mx-auto">
+                              <button class="product-decrease">
+                                <i class="fa-solid fa-minus"></i>
+                              </button>
+                              <input
+                                type="number"
+                                min="1"
+                                value="1"
+                                placeholder="1"
+                                class="product-countdown-input"
+                              />
+                              <button class="product-increase">
+                                <i class="fa-solid fa-plus"></i>
+                              </button>
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
+                        </td>
+                        <td>
+                          <div class="cart-subtotal-price">Tk 9,600.00</div>
+                        </td>
+                        <td>
+                          <div class="clear-single-cart">
+                            <i class="fa fa-times"></i>
                           </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 col-6">
-                      <div class="product-wrap">
-                        <div class="product-image">
-                          <a href="./single-product.html">
-                            <img
-                              src="./assets/img/products/men-product-1.webp"
-                              alt="product"
-                            />
-                          </a>
-                          <div class="product-action-btn">
-                            <!-- action button  start -->
-
-                            <button
-                              data-bs-toggle="modal"
-                              href="#viewModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-eye"></i>
-                            </button>
-                            <button
-                              type="button"
-                              data-bs-toggle="offcanvas"
-                              data-bs-target="#cartProdcut"
-                              aria-controls="cartProdcut"
-                            >
-                              <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button><i class="fa-solid fa-heart"></i></button>
-                            <button
-                              data-bs-toggle="modal"
-                              href="#compareModal"
-                              role="button"
-                            >
-                              <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                            </button>
-
-                            <!-- action button end  -->
-                          </div>
-                        </div>
-                        <div class="product-content">
-                          <div class="product-title">
-                            <h4>
-                              <a href="./single-product.html">
-                                W. Men Formal T-shirt
-                              </a>
-                            </h4>
-                          </div>
-                          <div class="product-price">
-                            <p class="old-price">Tk <span>2600.00</span></p>
-                            <p class="new-price">Tk <span>2200.00</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- all collection shop area end -->
+        <!-- contact info area end -->
       </main>
-
       <!-- footer area start  -->
 
       <footer class="footer-area">
@@ -1673,7 +1365,7 @@
                       </p>
                     </div>
                     <!-- Product Size -->
-                    <div class="product-size">
+                    <div class="product-size mb-4">
                       <h4 class="product-option-title">Select Size</h4>
                       <div class="size-options">
                         <div class="size-option" data-size="Small">Small</div>
@@ -1692,7 +1384,7 @@
                     </div>
 
                     <!-- Product Color -->
-                    <div class="product-color">
+                    <div class="product-color mb-4">
                       <h4 class="product-option-title">Select Color</h4>
                       <div class="color-options">
                         <div
@@ -1740,7 +1432,7 @@
                           <i class="fa-solid fa-plus"></i>
                         </button>
                       </div>
-                      <div class="product-cart-btn mx-auto">
+                      <div class="product-cart-btns mx-auto">
                         <a
                           href=""
                           type="button"
@@ -2013,7 +1705,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
-    <script src="./assets/js/filter-products.js"></script>
     <script src="./assets/js/products-size-color.js"></script>
     <script src="./assets/js/products-cart-count.js"></script>
     <script src="./assets/js/script.js"></script>
