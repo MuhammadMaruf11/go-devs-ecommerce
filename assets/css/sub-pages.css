@@ -937,3 +937,13 @@
 }
 
 /* cart page css end */
+
+/* checkout page css start  */
+
+.checkout-area {
+  background: #f1f1f1;
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+/* checkout page css end  */
