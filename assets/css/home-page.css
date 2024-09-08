@@ -216,6 +216,12 @@
   padding: 24px;
 }
 
+.cart-empty-message {
+  font-weight: 700;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
 .product-cart-items {
   display: flex;
   align-items: center;
