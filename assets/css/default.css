@@ -111,6 +111,10 @@ button:disabled {
   opacity: 0.6;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
 .form-control:focus {
   color: #191919;
   background-color: transparent;
