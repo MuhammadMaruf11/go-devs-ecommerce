@@ -1,6 +1,13 @@
 /* Laptop layout min 1200px */
 
 @media (min-width: 1200px) and (max-width: 1599px) {
+  :root {
+    --h1-font-size: 2.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.5rem;
+  }
+
   .main-menu > ul > li > a {
     font-size: 16px;
     padding: 15px 12px;
@@ -10,6 +17,13 @@
 /* Mini laptop layout min 769px */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
+    --section-padding: 2rem 1rem;
+  }
   .header-logo {
     width: 100%;
   }
@@ -44,6 +58,14 @@
 /* Tablet Layout wide: 768px. */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  :root {
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
+    --section-padding: 2rem 1rem;
+  }
+
   .header-bottom {
     position: fixed;
     width: 100%;
@@ -314,6 +336,13 @@
 /* Mobile layout max 425 */
 
 @media (max-width: 767px) {
+  :root {
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+  }
+
   .header-bottom {
     position: fixed;
     width: 100%;

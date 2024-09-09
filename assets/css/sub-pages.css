@@ -1,11 +1,5 @@
 /* all collection css start  */
 
-.all-collection-area {
-  background: #f1f1f1;
-  padding: 40px 0;
-  margin-bottom: 0;
-}
-
 .filter-wrap {
   margin-bottom: 40px;
 }
@@ -157,8 +151,6 @@
 /* single page css start  */
 
 .product-details-area {
-  margin: 0;
-  background: #f1f1f1;
   padding: 40px 0 20px;
 }
 
@@ -230,9 +222,7 @@
 }
 
 .descript-specs-area {
-  background: #f1f1f1;
   padding: 20px 0 40px;
-  margin: 0;
 }
 
 .descript-specs-area .tab-content {
@@ -288,12 +278,6 @@
 }
 
 /* review area css start  */
-
-.review-area {
-  background: #f1f1f1;
-  margin: 0;
-  padding: 40px 0;
-}
 
 .review-title {
   margin-bottom: 40px;
@@ -353,12 +337,6 @@
 .item-number {
   font-weight: bold;
   color: #333;
-}
-
-.related-product-area {
-  margin: 0;
-  padding: 40px 0;
-  background: #f1f1f1;
 }
 
 .related-product-area .container {
@@ -820,21 +798,9 @@
   position: relative;
 }
 
-.login-area {
-  background: #f1f1f1;
-  margin: 0;
-  padding: 40px 0;
-}
-
 /* login page css end */
 
 /* contact page css start  */
-
-.contact-info-area {
-  margin: 0;
-  padding: 40px 0;
-  background: #f1f1f1;
-}
 
 .contact-info-wrap {
   padding: 50px 30px;
@@ -860,12 +826,6 @@
   margin-bottom: 5px;
 }
 
-.contact-form-area {
-  padding: 40px 0;
-  margin-bottom: 0;
-  background: #f1f1f1;
-}
-
 .contact-form-title {
   margin-bottom: 24px;
 }
@@ -885,12 +845,6 @@
 /* contact page css end */
 
 /* cart page css start  */
-
-.cart-area {
-  margin: 0;
-  padding: 40px 0;
-  background: #f1f1f1;
-}
 
 .cart-wrap table {
   border: 1px solid var(--background-color);
@@ -936,14 +890,134 @@
 
 /* checkout page css start  */
 
-.checkout-area {
-  background: #f1f1f1;
-  padding: 40px 0;
-  margin-bottom: 0;
-}
-
 .checkout-cart-wrap strong {
   font-size: 14px;
 }
 
 /* checkout page css end  */
+
+/* blog page css start  */
+
+.blog-sidebar-wrap {
+  margin-bottom: 50px;
+}
+
+.blog-sidebar-wrap h3 {
+  margin-bottom: 24px;
+}
+
+.search-btn button {
+  padding: 15px 20px;
+  min-height: max-content;
+}
+
+.recent-post-items {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.recent-post-items .item-img {
+  min-width: 80px;
+}
+
+.recent-post-items .item-text {
+  overflow: hidden;
+}
+
+.recent-post-items .item-text h6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.tags-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags-list ul li {
+  margin: 0 24px 24px 0;
+}
+
+.tags-list ul li a {
+  display: block;
+  padding: 8px 24px 6px;
+  font-size: 13px;
+  text-transform: uppercase;
+  background-color: var(--light-background-color);
+  font-weight: 700;
+}
+
+.tags-list ul li a:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.newsletter-wrap {
+  text-align: center;
+}
+
+.newsletter-title {
+  margin-bottom: 20px;
+}
+
+.newsletter-description {
+  margin-bottom: 30px;
+}
+
+.news-letter-btn .btn {
+  min-height: 58px;
+}
+
+.single-blog-img {
+  margin-bottom: 24px;
+}
+
+.single-blog-img img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.single-blog-title {
+  margin-bottom: 24px;
+}
+
+.single-blog-title h1 {
+  font-size: 36px;
+}
+
+.single-blog-items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.single-blog-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.single-blog-description {
+  margin-bottom: 24px;
+}
+
+.single-blog-box {
+  background: var(--background-color);
+  text-align: center;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.single-blog-tags h3 {
+  margin-bottom: 24px;
+}
+
+/* blog page css end */
