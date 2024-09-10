@@ -3,14 +3,13 @@
   /* Color Palette */
   --primary-color: #ff5900;
   --secondary-color: #ffb200;
-  --accent-color: #08c;
   --text-color: #565656;
   --heading-color: #111;
   --background-color: #ebebeb;
   --light-background-color: #f1f1f1;
   --border-color: rgba(0, 0, 0, 0.15);
   --old-price-color: #a0a0a0;
-  --new-price-color: var(--accent-color);
+  --new-price-color: #08c;
 
   /* Font Sizes */
   --h1-font-size: 3rem; /* 48px */
