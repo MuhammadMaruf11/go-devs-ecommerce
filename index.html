@@ -541,9 +541,27 @@
               <div class="col-lg-2 col-7">
                 <div class="header-right">
                   <div class="search-product-wrap">
-                    <a href="javascript:void(0)">
+                    <a id="globalSearch" href="javascript:void(0)">
                       <i class="fa fa-search"></i>
                     </a>
+                    <div class="search-toggle-wrap">
+                      <div class="form-floating">
+                        <input
+                          type="search"
+                          class="form-control"
+                          id="floatingSearch"
+                          placeholder="Search here"
+                        />
+                        <label for="floatingSearch">Search here</label>
+                      </div>
+                      <div class="search-btn">
+                        <button type="submit" class="btn btn_info w-100">
+                          <span class="btn__txt">
+                            <i class="fa fa-search"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="login-wrap">
                     <a href="javascript:void(0)">
@@ -586,6 +604,26 @@
             </a>
           </div>
           <ul class="mobile-main-menu">
+            <li>
+              <div class="mobile-menu-search-wrap">
+                <div class="form-floating">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="floatingSearch"
+                    placeholder="Search here"
+                  />
+                  <label for="floatingSearch">Search here</label>
+                </div>
+                <div class="search-btn">
+                  <button type="submit" class="btn btn_info">
+                    <span class="btn__txt">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </li>
             <li class="">
               <a href="#">
                 <span>Home </span>
@@ -3293,10 +3331,6 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
     <script src="./assets/js/offer-countdown.js"></script>
-    <script src="./assets/js/products-size-color.js"></script>
-    <script src="./assets/js/products-cart-count.js"></script>
-    <script src="./assets/js/products-offcanvas-script.js"></script>
-    <script src="./assets/js/products-compare-script.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

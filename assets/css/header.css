@@ -113,7 +113,7 @@
   top: 100%;
   left: 0;
   text-align: left;
-  padding: 25px;
+  padding: 20px;
   background: #fff;
   box-shadow: 0 1px 0 0 #f0f0f5, 0 1px 2px 0 rgba(0, 0, 0, 0.24),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -218,6 +218,35 @@
 .header-right a:hover {
   color: #0088cc;
   color: var(--primary-color);
+}
+
+.search-product-wrap {
+  position: relative;
+}
+
+.search-toggle-wrap {
+  position: absolute;
+  display: flex;
+  right: -20px;
+  top: 130%;
+  width: max-content;
+  background: #fff;
+  z-index: 99999;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  height: 0;
+}
+
+.search-toggle-wrap.active {
+  height: 58px;
+}
+
+.search-toggle-wrap .form-control {
+  width: 380px;
+}
+
+.search-toggle-wrap .search-btn .btn {
+  min-height: 58px;
 }
 
 .login-wrap {

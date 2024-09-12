@@ -1058,3 +1058,50 @@
 }
 
 /* blog page css end */
+
+/* search page css start  */
+
+.search-bar-wrap {
+  margin-bottom: 50px;
+}
+
+.search-page-text {
+  text-align: center;
+}
+
+.search-page-text h3 {
+  margin-bottom: 40px;
+}
+
+.search-page-text p {
+  margin-bottom: 12px;
+}
+
+.search-bar-wrap .search-btn .btn {
+  min-height: 58px;
+}
+
+.search-product-item {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-bottom: 40px;
+}
+
+.search-blog-item {
+  margin-bottom: 40px;
+}
+
+.product-item-img {
+  max-width: 150px;
+}
+
+.search-item-text .item-title {
+  margin-bottom: 16px;
+}
+
+.search-item-text .item-description {
+  margin-top: 16px;
+}
+
+/* search page css end */
