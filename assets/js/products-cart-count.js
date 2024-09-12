@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 let currentValue = parseInt(input.value);
                 if (currentValue > 1) {
                     input.value = currentValue - 1;
-                    updateSubtotal(input, row);
+                    if (totalPriceElement) {
+                        updateSubtotal(input, row);
+                    }
                 }
             });
         });
@@ -60,7 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.addEventListener('click', function () {
                 let currentValue = parseInt(input.value);
                 input.value = currentValue + 1;
-                updateSubtotal(input, row);
+                if (totalPriceElement) {
+                    updateSubtotal(input, row);
+                }
             });
         });
     }
