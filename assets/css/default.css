@@ -388,6 +388,10 @@ label {
   font-weight: 700;
 }
 
+.product-title a:hover {
+  color: var(--primary-color);
+}
+
 /* custom  bootstrap class overwrite start */
 
 .offcanvas {

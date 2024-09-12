@@ -932,6 +932,10 @@
   text-wrap: nowrap;
 }
 
+.recent-post-items .item-text h6 a:hover {
+  color: var(--primary-color);
+}
+
 .tags-list ul {
   list-style: none;
   display: flex;
@@ -1098,6 +1102,10 @@
 
 .search-item-text .item-title {
   margin-bottom: 16px;
+}
+
+.search-item-text .item-title a:hover {
+  color: var(--primary-color);
 }
 
 .search-item-text .item-description {
