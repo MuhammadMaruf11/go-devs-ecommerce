@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   margin: 10px 0;
-  column-gap: 12px;
+  gap: 12px;
 }
 
 .filter-group > label {
@@ -265,16 +265,26 @@
   padding: 12px;
 }
 
+.related-product-title h6 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding: 8px 0;
+}
+
 .related-product-items {
   margin-bottom: 24px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 12px;
+  justify-content: space-between;
 }
 
 .related-product-items .product-img {
   width: 30%;
+}
+
+.related-product-items .product-text {
+  width: 68%;
 }
 
 /* review area css start  */

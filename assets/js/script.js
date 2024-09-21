@@ -75,6 +75,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+
+    /*-------------------------------------------
+        mobile filter collapsed 
+     --------------------------------------------- */
+
+
+    const openFilter = document.querySelector('#openFilter');
+
+    if (openFilter) {
+        openFilter.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.filter-wrap').classList.add('open')
+        })
+
+    }
+
+    const closeFilter = document.querySelector('#closeFilter');
+
+    if (closeFilter) {
+        closeFilter.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.filter-wrap').classList.remove('open')
+        })
+
+    }
+
+
     /*-------------------------------------------
          footer items collapsed
      --------------------------------------------- */

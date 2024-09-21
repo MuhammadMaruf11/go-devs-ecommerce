@@ -491,29 +491,13 @@
                       <div class="sub-menu tiny-menu">
                         <div class="row">
                           <div class="col-12">
-                            <div class="sub-menu-title">
-                              <h6>Accessories</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12">
                             <div class="sub-menu-list">
                               <ul>
                                 <li>
-                                  <a href="#">Bags & Purses</a>
+                                  <a href="./blog.html">Default</a>
                                 </li>
                                 <li>
-                                  <a href="#">Hats & Caps</a>
-                                </li>
-                                <li>
-                                  <a href="#">Scarves & Shawls</a>
-                                </li>
-                                <li>
-                                  <a href="#">Belts & Suspenders</a>
-                                </li>
-                                <li>
-                                  <a href="#">Sunglasses</a>
+                                  <a href="./blog-service.html">Service</a>
                                 </li>
                               </ul>
                             </div>
@@ -557,9 +541,27 @@
               <div class="col-lg-2 col-7">
                 <div class="header-right">
                   <div class="search-product-wrap">
-                    <a href="javascript:void(0)">
+                    <a id="globalSearch" href="javascript:void(0)">
                       <i class="fa fa-search"></i>
                     </a>
+                    <div class="search-toggle-wrap">
+                      <div class="form-floating">
+                        <input
+                          type="search"
+                          class="form-control"
+                          id="floatingSearch"
+                          placeholder="Search here"
+                        />
+                        <label for="floatingSearch">Search here</label>
+                      </div>
+                      <div class="search-btn">
+                        <button type="submit" class="btn btn_info w-100">
+                          <span class="btn__txt">
+                            <i class="fa fa-search"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="login-wrap">
                     <a href="javascript:void(0)">
@@ -567,7 +569,7 @@
                     </a>
                     <ul>
                       <li>
-                        <a href="#">My Account</a>
+                        <a href="./dashboard.html">My Account</a>
                       </li>
                       <li>
                         <a href="./wishlist.html">Wishlist</a>
@@ -602,6 +604,26 @@
             </a>
           </div>
           <ul class="mobile-main-menu">
+            <li>
+              <div class="mobile-menu-search-wrap">
+                <div class="form-floating">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="floatingSearch"
+                    placeholder="Search here"
+                  />
+                  <label for="floatingSearch">Search here</label>
+                </div>
+                <div class="search-btn">
+                  <button type="submit" class="btn btn_info">
+                    <span class="btn__txt">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </li>
             <li class="">
               <a href="#">
                 <span>Home </span>
@@ -965,19 +987,10 @@
               </a>
               <ul class="mobile-sub-menu">
                 <li>
-                  <a href="#">Bags & Purses</a>
+                  <a href="./blog.html">Default</a>
                 </li>
                 <li>
-                  <a href="#">Hats & Caps</a>
-                </li>
-                <li>
-                  <a href="#">Scarves & Shawls</a>
-                </li>
-                <li>
-                  <a href="#">Belts & Suspenders</a>
-                </li>
-                <li>
-                  <a href="#">Sunglasses</a>
+                  <a href="./blog-service.html">Service</a>
                 </li>
               </ul>
             </li>
@@ -1021,7 +1034,23 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-3">
-                <form class="filter-wrap mb-lg-0">
+                <div class="filter-btn-wrap d-lg-none">
+                  <button id="openFilter" class="btn btn_info">
+                    <span class="btn__txt">
+                      FIlter
+                      <i class="fa fa-filter"></i>
+                    </span>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <form class="filter-wrap mobile-filter-wrap mb-lg-0">
+                  <div class="mobile-action-btn d-lg-none">
+                    <h5>Filter</h5>
+                    <i id="closeFilter" class="fa fa-times"></i>
+                  </div>
                   <!-- Filter by Sort -->
                   <div class="filter-group">
                     <label for="sort-filter">Sort By:</label>
@@ -1555,7 +1584,7 @@
           <div class="row">
             <div class="col-12 text-center">
               <div class="footer-copy-right">
-                <p>© 2024 <strong>Minimalin</strong>. All rights reserved.</p>
+                <p>© 2024 <strong>GO Devs</strong>. All rights reserved.</p>
               </div>
             </div>
           </div>

@@ -491,29 +491,13 @@
                       <div class="sub-menu tiny-menu">
                         <div class="row">
                           <div class="col-12">
-                            <div class="sub-menu-title">
-                              <h6>Accessories</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12">
                             <div class="sub-menu-list">
                               <ul>
                                 <li>
-                                  <a href="#">Bags & Purses</a>
+                                  <a href="./blog.html">Default</a>
                                 </li>
                                 <li>
-                                  <a href="#">Hats & Caps</a>
-                                </li>
-                                <li>
-                                  <a href="#">Scarves & Shawls</a>
-                                </li>
-                                <li>
-                                  <a href="#">Belts & Suspenders</a>
-                                </li>
-                                <li>
-                                  <a href="#">Sunglasses</a>
+                                  <a href="./blog-service.html">Service</a>
                                 </li>
                               </ul>
                             </div>
@@ -557,9 +541,27 @@
               <div class="col-lg-2 col-7">
                 <div class="header-right">
                   <div class="search-product-wrap">
-                    <a href="javascript:void(0)">
+                    <a id="globalSearch" href="javascript:void(0)">
                       <i class="fa fa-search"></i>
                     </a>
+                    <div class="search-toggle-wrap">
+                      <div class="form-floating">
+                        <input
+                          type="search"
+                          class="form-control"
+                          id="floatingSearch"
+                          placeholder="Search here"
+                        />
+                        <label for="floatingSearch">Search here</label>
+                      </div>
+                      <div class="search-btn">
+                        <button type="submit" class="btn btn_info w-100">
+                          <span class="btn__txt">
+                            <i class="fa fa-search"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="login-wrap">
                     <a href="javascript:void(0)">
@@ -567,7 +569,7 @@
                     </a>
                     <ul>
                       <li>
-                        <a href="#">My Account</a>
+                        <a href="./dashboard.html">My Account</a>
                       </li>
                       <li>
                         <a href="./wishlist.html">Wishlist</a>
@@ -602,6 +604,26 @@
             </a>
           </div>
           <ul class="mobile-main-menu">
+            <li>
+              <div class="mobile-menu-search-wrap">
+                <div class="form-floating">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="floatingSearch"
+                    placeholder="Search here"
+                  />
+                  <label for="floatingSearch">Search here</label>
+                </div>
+                <div class="search-btn">
+                  <button type="submit" class="btn btn_info">
+                    <span class="btn__txt">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </li>
             <li class="">
               <a href="#">
                 <span>Home </span>
@@ -965,19 +987,10 @@
               </a>
               <ul class="mobile-sub-menu">
                 <li>
-                  <a href="#">Bags & Purses</a>
+                  <a href="./blog.html">Default</a>
                 </li>
                 <li>
-                  <a href="#">Hats & Caps</a>
-                </li>
-                <li>
-                  <a href="#">Scarves & Shawls</a>
-                </li>
-                <li>
-                  <a href="#">Belts & Suspenders</a>
-                </li>
-                <li>
-                  <a href="#">Sunglasses</a>
+                  <a href="./blog-service.html">Service</a>
                 </li>
               </ul>
             </li>
@@ -1020,7 +1033,7 @@
         <section class="product-details-area common-section">
           <div class="container bg-white py-3 box-shadow">
             <div class="row">
-              <div class="col-xl-5">
+              <div class="col-lg-5">
                 <div class="product-img-wrap">
                   <div class="product-img">
                     <img
@@ -1030,7 +1043,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-7">
+              <div class="col-lg-7">
                 <div class="product-details-wrap">
                   <div class="product-name">
                     <h4>W. Men Formal T-shirt</h4>
@@ -1123,7 +1136,7 @@
                         data-bs-toggle="offcanvas"
                         data-bs-target="#cartProdcut"
                         aria-controls="cartProdcut"
-                        class="btn btn_primary me-3"
+                        class="btn btn_primary me-md-3 me-1"
                       >
                         <span class="btn__txt">Add to Cart</span>
                         <i class="btn__bg" aria-hidden="true"></i>
@@ -1153,7 +1166,7 @@
         <section class="descript-specs-area common-section">
           <div class="container">
             <div class="row">
-              <div class="col-9">
+              <div class="col-lg-9 mb-lg-0 mb-4 ps-lg-0">
                 <ul
                   class="nav nav-tabs justify-content-start"
                   id="myTab"
@@ -1274,10 +1287,10 @@
                     <div class="shipping-policy-wrap">
                       <div class="shipping-policy-content">
                         <p>
-                          At Minimalin, we are committed to delivering your
-                          orders swiftly and efficiently. Our Shipping Policy
-                          outlines the details of our shipping process to ensure
-                          a seamless shopping experience for you.
+                          At GO Devs, we are committed to delivering your orders
+                          swiftly and efficiently. Our Shipping Policy outlines
+                          the details of our shipping process to ensure a
+                          seamless shopping experience for you.
                         </p>
                       </div>
                       <div class="shipping-policy-content">
@@ -1353,7 +1366,10 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-3 pe-lg-0">
+                <div class="related-product-title">
+                  <h6>Related Products</h6>
+                </div>
                 <div class="related-products-wrap box-shadow">
                   <div class="related-product-items">
                     <div class="product-img">
@@ -1469,7 +1485,7 @@
                 </div>
               </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center gap-lg-0 gap-3">
               <div class="col-lg-4">
                 <div class="review-widget">
                   <div class="review-content">
@@ -2595,7 +2611,7 @@
           <div class="row">
             <div class="col-12 text-center">
               <div class="footer-copy-right">
-                <p>© 2024 <strong>Minimalin</strong>. All rights reserved.</p>
+                <p>© 2024 <strong>GO Devs</strong>. All rights reserved.</p>
               </div>
             </div>
           </div>
