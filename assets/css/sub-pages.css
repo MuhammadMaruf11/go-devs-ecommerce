@@ -817,6 +817,11 @@
   text-align: center;
   background: #fff;
   box-shadow: 0 0 5px #f1f1f120;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info-title {
@@ -900,6 +905,11 @@
 
 /* checkout page css start  */
 
+.checkout-cart-wrap {
+  position: sticky;
+  top: 15px;
+}
+
 .checkout-cart-wrap strong {
   font-size: 14px;
 }
@@ -958,7 +968,7 @@
 
 .tags-list ul li a {
   display: block;
-  padding: 8px 24px 6px;
+  padding: 8px 24px;
   font-size: 13px;
   text-transform: uppercase;
   background-color: var(--light-background-color);
