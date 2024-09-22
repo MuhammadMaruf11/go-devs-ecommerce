@@ -6,8 +6,6 @@ $(function () {
                 .each(function () {
                     $("label", this).css({
                         "line-height": "18px",
-                        "font-size": "18px",
-                        "font-weight": "100",
                         top: "0px"
                     });
                     $(".spin", this).css({
@@ -25,8 +23,6 @@ $(function () {
                     .each(function () {
                         $("label", this).css({
                             "line-height": "60px",
-                            "font-size": "24px",
-                            "font-weight": "300",
                             top: "10px"
                         });
                     });

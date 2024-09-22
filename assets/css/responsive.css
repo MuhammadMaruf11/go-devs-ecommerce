@@ -510,6 +510,43 @@
     text-align: left;
   }
 
+  /* login/register page css  */
+
+  .login-area {
+    padding-top: 120px;
+  }
+
+  /* user page css  */
+
+  .user-dashboard-area {
+    padding-top: 120px;
+  }
+
+  .sidebar-toggle-btn {
+    width: 50%;
+    margin: 24px auto;
+  }
+
+  .user-sidebar-wrap {
+    margin-bottom: 40px;
+  }
+
+  .user-dashboard-list {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    padding: 0 8px;
+  }
+
+  .user-dashboard-list.open {
+    height: 480px;
+    padding: 8px;
+  }
+
+  .dashboard-card {
+    padding: 50px 24px;
+  }
+
   /* footer css  */
 
   .footer-area {
@@ -1012,12 +1049,14 @@
     padding-top: 100px;
   }
 
-  .cart-wrap {
+  .cart-wrap,
+  .dashboard-table {
     width: 100%;
     overflow-x: auto;
   }
 
-  .cart-wrap table {
+  .cart-wrap table,
+  .dashboard-table table {
     width: 750px;
   }
 
@@ -1052,12 +1091,30 @@
   /* blog page css  */
 
   .blog-area {
-    padding-top: 120px;
+    padding-top: 100px;
+  }
+
+  .single-blog-title h1 {
+    font-size: 28px;
+  }
+
+  .single-blog-box {
+    padding: 16px;
+    text-align: left;
   }
 
   .tags-list ul li a {
     font-size: 12px;
     padding: 5px 10px;
+  }
+
+  .comment-items {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .comment-items .item-img {
+    margin-bottom: 24px;
   }
 
   .news-letter-btn {
@@ -1089,6 +1146,59 @@
 
   .search-item-text .item-description {
     margin-top: 8px;
+  }
+
+  /* login/register page css  */
+
+  .login-area {
+    padding-top: 120px;
+  }
+
+  .box,
+  .overbox {
+    padding: 20px;
+  }
+
+  .alt-2.active .shape {
+    top: -25px;
+    right: 40px;
+  }
+
+  .material-button,
+  .alt-2 {
+    top: -15px;
+    right: -15px;
+  }
+
+  /* user page css  */
+
+  .user-dashboard-area {
+    padding-top: 120px;
+  }
+
+  .sidebar-toggle-btn {
+    width: 50%;
+    margin: 24px auto;
+  }
+
+  .user-sidebar-wrap {
+    margin-bottom: 40px;
+  }
+
+  .user-dashboard-list {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    padding: 0 8px;
+  }
+
+  .user-dashboard-list.open {
+    height: 480px;
+    padding: 8px;
+  }
+
+  .profile-info-wrap .btn {
+    width: 100%;
   }
 
   /* footer css  */

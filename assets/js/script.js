@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const globalSearch = document.getElementById('globalSearch');
     const searchToggleWrap = document.querySelector('.search-toggle-wrap');
 
-    globalSearch.addEventListener('click', function () {
-        // Use classList.toggle() to add/remove 'active' class
-        searchToggleWrap.classList.toggle('active');
-    });
+    if (globalSearch && searchToggleWrap) {
+        globalSearch.addEventListener('click', function () {
+            // Use classList.toggle() to add/remove 'active' class
+            searchToggleWrap.classList.toggle('active');
+        });
+    }
 
 
     /*-------------------------------------------
@@ -99,6 +101,44 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.filter-wrap').classList.remove('open')
         })
 
+    }
+
+
+    /*-------------------------------------------
+        user dasboard sidebar collapsed 
+     --------------------------------------------- */
+
+
+    const userToggleBtn = document.querySelector('#userToggleBtn');
+
+    if (userToggleBtn) {
+        userToggleBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector('.user-dashboard-list').classList.toggle('open')
+        })
+    }
+
+
+    /*-------------------------------------------
+        user dashboard sidebar active  
+     --------------------------------------------- */
+
+
+    // Get the current URL path
+    const currentPath = window.location.pathname;
+
+
+    // Select all links in the user dashboard list
+    const links = document.querySelectorAll('.user-dashboard-list a');
+
+    if (links) {
+        // Loop through the links to check for the active state
+        links.forEach(link => {
+            // Check if the href attribute matches the current path
+            if (link.getAttribute('href') === currentPath) {
+                link.classList.add('active'); // Add active class if match found
+            }
+        });
     }
 
 
