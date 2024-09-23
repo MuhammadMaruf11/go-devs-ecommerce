@@ -1144,7 +1144,7 @@
                         <i class="btn__bg" aria-hidden="true"></i>
                         <i class="btn__bg" aria-hidden="true"></i>
                       </a>
-                      <a href="#" class="btn btn_success">
+                      <a href="/checkout.html" class="btn btn_success">
                         <span class="btn__txt">Buy it now</span>
                         <i class="btn__bg" aria-hidden="true"></i>
                         <i class="btn__bg" aria-hidden="true"></i>
@@ -1595,7 +1595,11 @@
               <div class="col-lg-4">
                 <div class="review-widget">
                   <div class="write-review-btn text-center">
-                    <a href="#" class="btn btn_success">
+                    <a
+                      data-bs-toggle="modal"
+                      href="#reviewModal"
+                      class="btn btn_success"
+                    >
                       <span class="btn__txt">Write a review</span>
                       <i class="btn__bg" aria-hidden="true"></i>
                       <i class="btn__bg" aria-hidden="true"></i>
@@ -1617,7 +1621,7 @@
             <div class="row">
               <div class="col-12 text-center">
                 <div class="review-title">
-                  <h2>Feature Products</h2>
+                  <h3>Feature Products</h3>
                 </div>
               </div>
             </div>
@@ -2064,7 +2068,7 @@
             <div class="row">
               <div class="col-12 text-center">
                 <div class="review-title">
-                  <h2>New Arrivals Products</h2>
+                  <h3>New Arrivals Products</h3>
                 </div>
               </div>
             </div>
@@ -2868,7 +2872,7 @@
             </div>
             <div class="modal-body">
               <div id="emptyMessage" style="display: none; text-align: center">
-                <h2 class="text-theme">Add product to compare</h2>
+                <h2 class="new-price">Add product to compare</h2>
               </div>
               <table class="table table-bordered" id="compareTable">
                 <thead>
@@ -3041,6 +3045,122 @@
       </div>
 
       <!-- compare modal end -->
+
+      <!-- review modal start  -->
+
+      <div
+        class="modal fade"
+        id="reviewModal"
+        aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content rounded-4">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalToggleLabel">
+                Write a review
+              </h3>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-4">
+              <div class="review-wrapper">
+                <div class="review-product-item">
+                  <div class="item-img">
+                    <img
+                      src="assets/img/products/men-product-1.webp"
+                      alt="product"
+                    />
+                  </div>
+                  <div class="item-text">
+                    <h4>W. Men Formal T-shirt</h4>
+                    <p class="new-price">Tk 2200.00</p>
+                  </div>
+                </div>
+                <form action="#">
+                  <div class="rating-input">
+                    <div class="stars-wrap">
+                      <input
+                        type="radio"
+                        id="star1"
+                        class="rate"
+                        name="rating"
+                        value="1"
+                      />
+                      <label for="star1" title="1 star">★</label>
+                    </div>
+                    <div class="stars-wrap">
+                      <input
+                        type="radio"
+                        id="star2"
+                        class="rate"
+                        name="rating"
+                        value="2"
+                      />
+                      <label for="star2" title="2 stars">★</label>
+                    </div>
+                    <div class="stars-wrap">
+                      <input
+                        type="radio"
+                        id="star3"
+                        class="rate"
+                        name="rating"
+                        value="3"
+                      />
+                      <label for="star3" title="3 stars">★</label>
+                    </div>
+                    <div class="stars-wrap">
+                      <input
+                        type="radio"
+                        id="star4"
+                        class="rate"
+                        name="rating"
+                        value="4"
+                      />
+                      <label for="star4" title="4 stars">★</label>
+                    </div>
+                    <div class="stars-wrap">
+                      <input
+                        type="radio"
+                        id="star5"
+                        class="rate"
+                        name="rating"
+                        value="5"
+                      />
+                      <label for="star5" title="5 stars">★</label>
+                    </div>
+                  </div>
+
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Enter message"
+                    ></textarea>
+                    <label for="message">Describe about this product.</label>
+                  </div>
+                  <div class="submit-review-btn mt-3">
+                    <button type="submit" class="btn btn_success">
+                      <span class="btn__txt">Submit</span>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                      <i class="btn__bg" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- review modal end -->
 
       <!-- bootstrap components body end -->
 

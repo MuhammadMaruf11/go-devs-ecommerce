@@ -541,9 +541,27 @@
               <div class="col-lg-2 col-7">
                 <div class="header-right">
                   <div class="search-product-wrap">
-                    <a href="javascript:void(0)">
+                    <a id="globalSearch" href="javascript:void(0)">
                       <i class="fa fa-search"></i>
                     </a>
+                    <div class="search-toggle-wrap">
+                      <div class="form-floating">
+                        <input
+                          type="search"
+                          class="form-control"
+                          id="floatingSearch"
+                          placeholder="Search here"
+                        />
+                        <label for="floatingSearch">Search here</label>
+                      </div>
+                      <div class="search-btn">
+                        <button type="submit" class="btn btn_info w-100">
+                          <span class="btn__txt">
+                            <i class="fa fa-search"></i>
+                          </span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="login-wrap">
                     <a href="javascript:void(0)">
@@ -551,7 +569,7 @@
                     </a>
                     <ul>
                       <li>
-                        <a href="#">My Account</a>
+                        <a href="./dashboard.html">My Account</a>
                       </li>
                       <li>
                         <a href="./wishlist.html">Wishlist</a>
@@ -586,6 +604,26 @@
             </a>
           </div>
           <ul class="mobile-main-menu">
+            <li>
+              <div class="mobile-menu-search-wrap">
+                <div class="form-floating">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="floatingSearch"
+                    placeholder="Search here"
+                  />
+                  <label for="floatingSearch">Search here</label>
+                </div>
+                <div class="search-btn mt-0">
+                  <button type="submit" class="btn btn_info">
+                    <span class="btn__txt">
+                      <i class="fa fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </li>
             <li class="">
               <a href="#">
                 <span>Home </span>
@@ -984,270 +1022,25 @@
       </header>
 
       <main>
-        <!-- banner area start  -->
-
-        <section class="blog-area common-section">
-          <div class="container bg-white p-4">
+        <section class="greetings-area common-section">
+          <div class="container bg-white">
             <div class="row">
-              <div class="col-12">
-                <div class="single-blog-wrap">
-                  <div class="single-blog-img">
-                    <img
-                      src="./assets/img/blog/big-blog-1.webp"
-                      alt="big_blog"
-                    />
-                  </div>
-                  <div class="single-blog-title">
-                    <h1>
-                      The Art of Layering: Creating Stylish and Functional
-                      Outfits
-                    </h1>
-                  </div>
-                  <div class="single-blog-items-wrap">
-                    <div class="single-blog-items">
-                      <div class="item-icon">
-                        <i class="far fa-user"></i>
-                      </div>
-                      <div class="item-text">
-                        <span>by: Marino Themes</span>
-                      </div>
-                    </div>
-                    <div class="single-blog-items">
-                      <div class="item-icon">
-                        <i class="fa fa-calendar-alt"></i>
-                      </div>
-                      <div class="item-text">
-                        <span>August 2023</span>
-                      </div>
-                    </div>
-                    <div class="single-blog-items">
-                      <div class="item-icon">
-                        <i class="fa fa-comment"></i>
-                      </div>
-                      <div class="item-text">
-                        <a href="#comment"> <span>2</span> comments</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="single-blog-description">
-                    <p>
-                      At vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti quos dolores et quas molestias excepturi sint
-                      occaecati cupiditate non provident, similique sunt in
-                      culpa qui officia deserunt mollitia animi, id est laborum
-                      et dolorum fuga. Et harum quidem rerum facilis est et
-                      expedita distinctio.
-                    </p>
-                  </div>
-                  <div class="single-blog-box">
-                    <h3>
-                      Temporibus autem quibusdam et aut officiis debitis aut
-                      rerum necessitatibus saepe eveniet ut et voluptates
-                      repudiandae sint et molestiae non recusandae.
-                    </h3>
-                  </div>
-                  <div class="single-blog-description">
-                    <p>
-                      Nam libero tempore, cum soluta nobis est eligendi optio
-                      cumque nihil impedit quo minus id quod maxime placeat
-                      facere possimus, omnis voluptas assumenda est, omnis dolor
-                      repellendus. Temporibus autem quibusdam et aut officiis
-                      debitis aut rerum necessitatibus saepe eveniet ut et
-                      voluptates repudiandae sint et molestiae non recusandae.
-                    </p>
-                  </div>
-                  <div class="single-blog-description">
-                    <p>
-                      Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                      reiciendis voluptatibus maiores alias consequatur aut
-                      perferendis doloribus asperiores repellat.
-                    </p>
-                  </div>
-                  <hr />
-                  <div class="single-blog-tags">
-                    <h3>Tags</h3>
-                    <div class="tags-list">
-                      <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Dress</a></li>
-                        <li><a href="#">Fashion</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">Spring</a></li>
-                        <li><a href="#">Winter</a></li>
-                        <li><a href="#">Footwear</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <hr />
+              <div class="greetings-wrap">
+                <h1 class="text-theme">Thank You for Your Purchase!</h1>
+                <p>Your order is being processed and will be shipped soon.</p>
+                <div class="greetings-btn">
+                  <a href="index.html" class="btn btn_success">
+                    <span class="btn__txt">Back to Home</span>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                    <i class="btn__bg" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- banner area end -->
-
-        <!-- comment area start  -->
-
-        <section class="comment-area common-section">
-          <div class="container bg-white p-4">
-            <div class="row">
-              <div class="col-12">
-                <div class="comment-title">
-                  <h3><span>2 </span> Comments</h3>
-                </div>
-                <div class="comment-wrap">
-                  <div class="comment-items">
-                    <div class="item-img">
-                      <img
-                        src="./assets/img/blog/profile-1.jpeg"
-                        alt="comment"
-                      />
-                    </div>
-                    <div class="item-text">
-                      <h5 class="item-title">Ethan Wilson</h5>
-                      <p class="item-time">Aug 21, 2023 at 02:33</p>
-                      <p class="item-comment">
-                        Nam libero tempore, cum soluta nobis est eligendi optio
-                        cumque nihil impedit quo minus id quod maxime placeat
-                        facere possimus, omnis voluptas assumenda est, omnis
-                        dolor repellendus.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="comment-items">
-                    <div class="item-img">
-                      <img
-                        src="./assets/img/blog/profile-2.jpg"
-                        alt="comment"
-                      />
-                    </div>
-                    <div class="item-text">
-                      <h5 class="item-title">Mia Taylor</h5>
-                      <p class="item-time">Aug 21, 2023 at 02:32</p>
-                      <p class="item-comment">
-                        Temporibus autem quibusdam et aut officiis debitis aut
-                        rerum necessitatibus saepe eveniet ut et voluptates
-                        repudiandae sint et molestiae non recusandae.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="comment-area common-section">
-          <div class="container bg-white p-md-4 p-3">
-            <div class="row">
-              <div class="col-12">
-                <div class="contact-form-title">
-                  <h3>Post Comment</h3>
-                </div>
-              </div>
-            </div>
-            <form action="" class="contact-form">
-              <div class="row">
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="Enter message"
-                    ></textarea>
-                    <label for="message">Enter message</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Enter your name"
-                    />
-                    <label for="name">Enter your name</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Enter email address"
-                    />
-                    <label for="email">Enter email address</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="submit-messeage-btn">
-                    <button type="submit" class="btn btn_success">
-                      <span class="btn__txt">Post Comment</span>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                      <i class="btn__bg" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </section>
-
-        <!-- comment area end -->
-
-        <!-- newsletter area start  -->
-
-        <section class="newsletter-area common-section">
-          <div class="container bg-white p-4">
-            <div class="row justify-content-center">
-              <div class="col-xl-8 col-lg-10">
-                <div class="newsletter-wrap">
-                  <div class="newsletter-title">
-                    <h2>Newsletter</h2>
-                  </div>
-                  <div class="newsletter-description">
-                    <p>
-                      Learn about our most recent news, updates, and deals by
-                      subscribing.
-                    </p>
-                  </div>
-                  <form class="row" action="">
-                    <div class="col-lg-9 col-md-8 pe-md-0">
-                      <div class="form-floating">
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="subscribeNewsletter"
-                          placeholder="name@example.com"
-                        />
-                        <label for="subscribeNewsletter">Email address</label>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-4 ps-md-0">
-                      <div class="news-letter-btn">
-                        <button type="submit" class="btn btn_success">
-                          <span class="btn__txt">Subscribe</span>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                          <i class="btn__bg" aria-hidden="true"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- newsletter area end -->
       </main>
 
       <!-- footer area start  -->
@@ -1356,7 +1149,10 @@
           <div class="row">
             <div class="col-12 text-center">
               <div class="footer-copy-right">
-                <p>© 2024 <strong>GO Devs</strong>. All rights reserved.</p>
+                <p>
+                  © 2024 <strong class="text-theme">GO Devs</strong>. All rights
+                  reserved.
+                </p>
               </div>
             </div>
           </div>
@@ -1854,6 +1650,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper.min.js"></script>
+    <script src="./assets/js/offer-countdown.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

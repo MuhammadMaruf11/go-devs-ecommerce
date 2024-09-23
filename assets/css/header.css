@@ -59,6 +59,10 @@
   font-size: 28px;
 }
 
+.toggle-icon i {
+  color: #000;
+}
+
 .main-menu {
   position: relative;
 }

@@ -76,6 +76,56 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    /*-------------------------------------------
+         review stars
+     --------------------------------------------- */
+    const stars = document.querySelectorAll('.stars-wrap input[type="radio"]');
+    const labels = document.querySelectorAll('.stars-wrap label');
+
+    if (stars) {
+        stars.forEach((star, index) => {
+
+
+            // Handle click
+            star.addEventListener('click', () => {
+                resetStars();
+                highlightStars(index);
+            });
+        });
+    }
+
+    if (labels) {
+        labels.forEach((star, index) => {
+            // Add hover functionality
+            star.addEventListener('mouseover', () => {
+                resetStars(); // Reset all stars
+                highlightStars(index);
+            });
+
+            // Reset stars on mouse out
+            star.addEventListener('mouseout', () => {
+                resetStars();
+                const checkedStar = document.querySelector('.stars-wrap input[type="radio"]:checked');
+                if (checkedStar) {
+                    highlightStars([...stars].indexOf(checkedStar)); // Keep checked stars highlighted
+                }
+            });
+        });
+
+        // Highlight function
+        function highlightStars(index) {
+            for (let i = 0; i <= index; i++) {
+                labels[i].classList.add('text-theme');
+            }
+        }
+
+        // Reset function
+        function resetStars() {
+            labels.forEach(label => label.classList.remove('text-theme'));
+        }
+    }
+
+
 
 
     /*-------------------------------------------
@@ -313,7 +363,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         <p>Continue browsing <a class='fw-bold' href='../../collection.html'><u>here</u></a></p>
                         </div>
                 </div>`;
-            console.log('cart', cartWrap);
             calculateSubtotalAndTotal();
         });
     }

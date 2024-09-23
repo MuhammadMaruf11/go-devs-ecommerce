@@ -432,6 +432,7 @@ label {
 
 .btn:hover {
   background: hsl(var(--hue), 98%, 80%);
+  color: #000;
 }
 
 .btn_warning {

@@ -20,6 +20,23 @@
 
 /* baner css end */
 
+/* category css start  */
+
+.category-wrap {
+  display: block;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.category-wrap .sub-menu-title {
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  display: block;
+  border-color: #333;
+}
+
+/* category css end */
+
 /* casual shop css start  */
 
 .casual-shop-wrap {
@@ -215,6 +232,7 @@
 
 .offcanvas-body {
   padding: 24px;
+  padding-top: 0;
 }
 
 .cart-empty-message {
@@ -313,6 +331,10 @@
 .compare-product-description {
   max-width: 85%;
   margin: 0 auto;
+}
+
+.remove-column {
+  color: #e11414;
 }
 
 /* compare modal end */

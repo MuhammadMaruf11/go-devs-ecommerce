@@ -24,6 +24,7 @@
     --h4-font-size: 1.25rem;
     --section-padding: 2rem 1rem;
   }
+
   .header-logo {
     width: 100%;
   }
@@ -94,6 +95,10 @@
     --section-padding: 2rem 1rem;
   }
 
+  section:first-child {
+    padding-top: 120px;
+  }
+
   .product-img {
     text-align: center;
     margin-bottom: 24px;
@@ -122,7 +127,7 @@
   .toggle-icon::after {
     position: absolute;
     content: "";
-    width: 18px;
+    width: 22px;
     height: 3px;
     border-radius: 30px;
     background: #000;
@@ -322,7 +327,7 @@
   }
 
   .banner-area {
-    padding-top: 100px;
+    margin-top: -35px;
   }
 
   .banner-container {
@@ -367,10 +372,6 @@
   }
 
   /* collection page css  */
-
-  .all-collection-area {
-    padding-top: 120px;
-  }
 
   .filter-btn-wrap {
     background: #fff;
@@ -428,10 +429,6 @@
 
   /* single product page css  */
 
-  .product-details-area {
-    padding-top: 120px;
-  }
-
   .product-img-wrap {
     box-shadow: 0 0 5px #00000020;
     padding: 20px;
@@ -474,23 +471,7 @@
     text-align: center;
   }
 
-  /* cart page css  */
-
-  .cart-area {
-    padding-top: 100px;
-  }
-
-  /* checkout page css  */
-
-  .checkout-area {
-    padding-top: 100px;
-  }
-
   /* contact page css  */
-
-  .contact-info-area {
-    padding-top: 100px;
-  }
 
   .contact-info-area .col-lg-4 {
     padding: 0;
@@ -502,25 +483,11 @@
 
   /* blog page css  */
 
-  .blog-area {
-    padding-top: 100px;
-  }
-
   .news-letter-btn {
     text-align: left;
   }
 
-  /* login/register page css  */
-
-  .login-area {
-    padding-top: 120px;
-  }
-
   /* user page css  */
-
-  .user-dashboard-area {
-    padding-top: 120px;
-  }
 
   .sidebar-toggle-btn {
     width: 50%;
@@ -580,6 +547,10 @@
     font-size: 14px;
   }
 
+  section:first-child {
+    padding-top: 100px;
+  }
+
   .container {
     max-width: 94%;
   }
@@ -593,8 +564,12 @@
     top: 5px;
   }
 
-  .contact-form .form-floating input {
+  .form-floating input {
     min-height: 58px;
+  }
+
+  .form-floating textarea {
+    min-height: 120px !important;
   }
 
   .header-bottom {
@@ -626,7 +601,7 @@
   .toggle-icon::after {
     position: absolute;
     content: "";
-    width: 18px;
+    width: 22px;
     height: 3px;
     border-radius: 30px;
     background: #000;
@@ -827,7 +802,7 @@
   }
 
   .banner-area {
-    padding-top: 100px;
+    margin-top: -15px;
   }
 
   .banner-container {
@@ -837,6 +812,18 @@
 
   .banner-wrap {
     text-align: center;
+  }
+
+  .banner-title h2 {
+    font-size: 36px;
+  }
+
+  .carousel-control-prev {
+    left: -15px;
+  }
+
+  .carousel-control-next {
+    right: -15px;
   }
 
   .casual-shop-wrap {
@@ -898,7 +885,7 @@
   }
 
   .marquee-area ul li {
-    font-size: 24px;
+    font-size: 18px;
     padding: 20px 0;
   }
 
@@ -926,10 +913,6 @@
   }
 
   /* collection page css  */
-
-  .all-collection-area {
-    padding-top: 100px;
-  }
 
   .filter-btn-wrap {
     background: #fff;
@@ -991,10 +974,6 @@
 
   /* single product page css  */
 
-  .product-details-area {
-    padding-top: 100px;
-  }
-
   .product-img-wrap {
     box-shadow: 0 0 5px #00000020;
     padding: 20px;
@@ -1043,11 +1022,15 @@
     text-align: center;
   }
 
-  /* cart page css  */
-
-  .cart-area {
-    padding-top: 100px;
+  .submit-review-btn .btn {
+    width: 100%;
   }
+
+  .stars-wrap label {
+    font-size: 24px;
+  }
+
+  /* cart page css  */
 
   .cart-wrap,
   .dashboard-table {
@@ -1062,10 +1045,6 @@
 
   /* checkout page css  */
 
-  .checkout-area {
-    padding-top: 100px;
-  }
-
   .contact-form-title h3 {
     margin-bottom: 8px;
   }
@@ -1076,10 +1055,6 @@
 
   /* contact page css  */
 
-  .contact-info-area {
-    padding-top: 100px;
-  }
-
   .contact-info-area .col-lg-4 {
     padding: 0;
   }
@@ -1089,10 +1064,6 @@
   }
 
   /* blog page css  */
-
-  .blog-area {
-    padding-top: 100px;
-  }
 
   .single-blog-title h1 {
     font-size: 28px;
@@ -1150,10 +1121,6 @@
 
   /* login/register page css  */
 
-  .login-area {
-    padding-top: 120px;
-  }
-
   .box,
   .overbox {
     padding: 20px;
@@ -1171,10 +1138,6 @@
   }
 
   /* user page css  */
-
-  .user-dashboard-area {
-    padding-top: 120px;
-  }
 
   .sidebar-toggle-btn {
     width: 50%;

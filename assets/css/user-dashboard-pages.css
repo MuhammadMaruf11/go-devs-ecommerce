@@ -172,7 +172,7 @@
   bottom: 0;
 }
 
-label:not(.form-check-label):not(.custom-file-label) {
+.user-dashboard-list label:not(.form-check-label):not(.custom-file-label) {
   font-weight: 600;
   font-size: 13px;
 }
