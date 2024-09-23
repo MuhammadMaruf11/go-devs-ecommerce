@@ -287,7 +287,7 @@
   width: 68%;
 }
 
-/* review area css start  */
+/* review area css   */
 
 .review-title {
   margin-bottom: 40px;
@@ -378,6 +378,23 @@
   font-weight: bold;
   color: #333;
 }
+
+.review-comment-wrap {
+  margin-bottom: 24px;
+}
+
+.review-stars i {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+
+.review-item {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+/* related area css  */
 
 .related-product-area .container {
   position: relative;

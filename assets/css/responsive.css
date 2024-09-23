@@ -981,7 +981,7 @@
   }
 
   .product-cart-btns .btn {
-    padding: 13px 20px;
+    padding: 10px 15px;
     font-size: 14px;
   }
 
@@ -1028,6 +1028,10 @@
 
   .stars-wrap label {
     font-size: 24px;
+  }
+
+  .write-review-btn .btn {
+    width: 100%;
   }
 
   /* cart page css  */
