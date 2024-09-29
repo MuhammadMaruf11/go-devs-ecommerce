@@ -20,15 +20,12 @@ $(document).ready(function () {
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                },
-                768: {
                     slidesPerView: 2,
                 },
-                1024: {
+                768: {
                     slidesPerView: 3,
                 },
-                1200: {
+                1024: {
                     slidesPerView: 4,
                 },
 
@@ -69,15 +66,12 @@ $(document).ready(function () {
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                },
-                768: {
                     slidesPerView: 2,
                 },
-                1024: {
+                768: {
                     slidesPerView: 3,
                 },
-                1200: {
+                1024: {
                     slidesPerView: 4,
                 },
 
